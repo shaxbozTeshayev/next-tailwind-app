@@ -1,4 +1,5 @@
 import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
 import HeaderSection from "@/components/HeaderSection";
 import MainNavigation from "@/components/MainNavigation";
 import Map from "@/components/Map";
@@ -24,6 +25,7 @@ export default function Home() {
         <Map />
         <Contacts />
         <News />
+        <Footer />
       </main>
     </>
   );

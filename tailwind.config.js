@@ -13,6 +13,7 @@ module.exports = {
         darkColor: "#1D242B",
         coolGray: "#7B8794",
         textSecondary: "#5877AB",
+        textMain: "#1D242B",
         mainColor: "#315796",
         brandColor: "#0F4C81",
         fifthGray: "#778082",
