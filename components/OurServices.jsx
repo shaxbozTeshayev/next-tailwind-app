@@ -31,11 +31,11 @@ const cardData = [
 
 const OurServices = () => {
   return (
-    <section className="mt-[100px]">
-      <h2 className="text-center font-Montserrat font-medium uppercase italic leading-[29px] text-darkColor">
+    <section className="md:px-[128px] lg:px-[316px]">
+      <h2 className="text-center font-Montserrat uppercase italic text-darkColor md:text-[18px] md:font-normal md:leading-[22px] lg:text-[24px] lg:font-medium lg:leading-[29px]">
         Наши услуги
       </h2>
-      <div className="mt-[40px] flex w-full justify-center gap-[85px]">
+      <div className="mt-[40px] flex w-full justify-center md:gap-[20px] lg:gap-[85px]">
         <Card cardData={cardData} />
       </div>
     </section>

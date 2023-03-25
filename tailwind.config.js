@@ -7,6 +7,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: "375px",
+      // => @media (min-width: 375px) { ... }
+
+      md: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      lg: "1920px",
+      // => @media (min-width: 1920px) { ... }
+    },
+
     extend: {
       colors: {
         backgroundColor: "#F3F7FF",
@@ -26,7 +37,6 @@ module.exports = {
       },
       fontFamily: {
         Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        // Livvic: ["Livvic", ...defaultTheme.fontFamily.sans],
       },
     },
   },
