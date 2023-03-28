@@ -1,6 +1,7 @@
 import React from "react";
 import CardNews from "./CardNews";
 import Image from "next/image";
+import Container from "./Container";
 
 const newsCardData = [
   {
@@ -25,14 +26,14 @@ const newsCardData = [
 
 const News = () => {
   return (
-    <section className="pt-[100px] pb-[120px]">
-      <h2 className="text-center font-Montserrat font-medium uppercase italic leading-[29px] text-darkColor">
+    <Container className="md:py-[60px] lg:py-[100px]">
+      <h2 className="text-center font-Montserrat font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
         Новости
       </h2>
-      <div className="container mx-auto mt-[40px] max-w-[1288px] tracking-[.03em]">
+      <div className="container mx-auto tracking-[.03em] md:mt-[27px] lg:mt-[40px]">
         <CardNews newsCardData={newsCardData} />
       </div>
-      <div className="mt-[24px] flex justify-center gap-[23px] align-middle">
+      <div className="mt-[24px] justify-center gap-[23px] align-middle md:hidden lg:flex">
         <button className="cursor-pointer rounded-full bg-white py-[27px] px-[23px]">
           <Image src="/icons/btnLeft.svg" width={24} height={16} />
         </button>
@@ -40,7 +41,7 @@ const News = () => {
           <Image src="/icons/btnRight.svg" width={24} height={16} />
         </button>
       </div>
-    </section>
+    </Container>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Card from "./Card";
+import Container from "./Container";
 
 const cardData = [
   {
@@ -31,14 +32,14 @@ const cardData = [
 
 const OurServices = () => {
   return (
-    <section className="md:px-[128px] lg:px-[316px]">
+    <Container>
       <h2 className="text-center font-Montserrat uppercase italic text-darkColor md:text-[18px] md:font-normal md:leading-[22px] lg:text-[24px] lg:font-medium lg:leading-[29px]">
         Наши услуги
       </h2>
       <div className="mt-[40px] flex w-full justify-center md:gap-[20px] lg:gap-[85px]">
         <Card cardData={cardData} />
       </div>
-    </section>
+    </Container>
   );
 };
 

@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import Container from "./Container";
 
 const Map = () => {
   return (
-    <section className="mt-[100px] w-full bg-white">
-      <h2 className="pt-[50px] text-center font-Montserrat font-medium uppercase italic leading-[29px] text-darkColor">
-        Наши филиалы
-      </h2>
-      <div className="flex justify-center pb-[75px]">
-        <Image src="/images/Map.png" width={1288} height={833} />
-      </div>
-    </section>
+    <div className="w-full bg-white md:mt-[20px] lg:mt-[100px]">
+      <Container>
+        <h2 className="text-center font-Montserrat font-medium uppercase text-darkColor md:pt-[40px] md:text-[18px] md:leading-[22px] lg:pt-[50px] lg:text-[24px] lg:italic lg:leading-[29px]">
+          Наши филиалы
+        </h2>
+        <div className="pb-[70px]">
+          <img src="/images/Map.png" className="h-auto w-full" />
+        </div>
+      </Container>
+    </div>
   );
 };
 

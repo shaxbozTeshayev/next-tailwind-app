@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <>
       {props.cardData.map((data) => (
-        <div className="relative flex flex-col rounded-[10px] bg-white md:h-auto md:w-[243px] md:p-[15px] lg:h-auto lg:w-[372px] lg:p-[20px]">
+        <div className="relative flex flex-col rounded-[10px] bg-white md:h-auto md:w-1/3 md:p-[15px] lg:h-auto lg:w-1/3 lg:p-[20px]">
           <h5 className=" font-Montserrat font-medium italic  text-[#315796]/[0.6] md:text-[12px] md:leading-[19px] lg:text-[14px] lg:leading-[22px]">
             {data.title1}
           </h5>
