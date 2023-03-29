@@ -12,10 +12,10 @@ const CardNews = (props) => {
             className="h-auto rounded-t-lg md:w-[374px] lg:w-[372px]"
           />
           <div className="lg:mt-[5px]">
-            <span className=" font-Montserrat font-medium uppercase italic text-textSecondary md:text-[12px] md:leading-[19px] lg:text-[16px] lg:leading-[26px]">
+            <span className="  font-medium uppercase italic text-textSecondary md:text-[12px] md:leading-[19px] lg:text-[16px] lg:leading-[26px]">
               {data.newsTime}
             </span>
-            <p className="font-Montserrat font-medium uppercase text-textMain md:mt-[16px] lg:mt-[9px] lg:text-[20px] lg:italic lg:leading-[32px]">
+            <p className=" font-medium uppercase text-textMain md:mt-[16px] lg:mt-[9px] lg:text-[20px] lg:italic lg:leading-[32px]">
               {data.newsDescription}
             </p>
           </div>

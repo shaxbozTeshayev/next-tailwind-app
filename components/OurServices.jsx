@@ -33,7 +33,7 @@ const cardData = [
 const OurServices = () => {
   return (
     <Container>
-      <h2 className="text-center font-Montserrat uppercase italic text-darkColor md:text-[18px] md:font-normal md:leading-[22px] lg:text-[24px] lg:font-medium lg:leading-[29px]">
+      <h2 className="text-center uppercase italic text-darkColor md:text-[18px] md:font-normal md:leading-[22px] lg:text-[24px] lg:font-medium lg:leading-[29px]">
         Наши услуги
       </h2>
       <div className="mt-[40px] flex w-full justify-center md:gap-[20px] lg:gap-[85px]">

@@ -35,9 +35,9 @@ module.exports = {
         mapColor: "#DEE6FF",
         illustrationColor: "#5E81BB",
       },
-      fontFamily: {
-        Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
-      },
+      // fontFamily: {
+      //   Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      // },
     },
   },
   plugins: [require("tailwind-scrollbar")],

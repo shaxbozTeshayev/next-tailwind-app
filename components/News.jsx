@@ -27,7 +27,7 @@ const newsCardData = [
 const News = () => {
   return (
     <Container className="md:py-[60px] lg:py-[100px]">
-      <h2 className="text-center font-Montserrat font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
+      <h2 className="text-center font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
         Новости
       </h2>
       <div className="container mx-auto tracking-[.03em] md:mt-[27px] lg:mt-[40px]">
