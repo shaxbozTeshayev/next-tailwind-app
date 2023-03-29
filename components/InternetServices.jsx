@@ -12,15 +12,15 @@ const InternetServices = ({ title }) => {
   ];
 
   return (
-    <Container className="py-[100px]">
-      <h1 className="text-center font-medium uppercase text-textMain lg:text-2xl">
+    <Container className="md:py-[5rem] lg:py-[6.25rem]">
+      <h1 className="text-center font-medium uppercase text-textMain md:text-md lg:text-lg">
         {title}
       </h1>
-      <div className="flex gap-[134px]  lg:mt-[38px]">
+      <div className="flex md:mt-[40px] md:gap-[84px] lg:gap-[134px]">
         <div className="relative w-2/5">
-          <div className="h-[560px] w-[520px]">
-            <div className="z-1 absolute top-0 left-0 h-[480px] w-[480px] rounded-[10px] bg-white"></div>
-            <div className="absolute top-[20px] left-[20px] z-10 flex h-[240px] w-[240px] flex-col  items-center justify-center rounded-[10px] bg-white  shadow-2xl">
+          <div className="md:h-[19.375rem] md:w-[20.875rem] lg:h-[35rem] lg:w-[32.5rem]">
+            <div className="z-1 absolute top-0 left-0 rounded-[10px] bg-white md:h-[18rem] md:w-[18rem] lg:h-[30rem] lg:w-[30rem]"></div>
+            <div className="absolute z-10 flex h-[240px] w-[240px] flex-col items-center justify-center rounded-[10px] bg-white  shadow-2xl md:top-[12px] md:left-[12px] lg:top-[20px]  lg:left-[20px]">
               <div className="flex h-[70px] w-[70px] justify-center rounded-full bg-mainColor">
                 <Image
                   width={36}

@@ -18,6 +18,16 @@ module.exports = {
       // => @media (min-width: 1920px) { ... }
     },
 
+    fontSize: {
+      sm: ["1rem", "1.25rem"],
+      md: ["1.125rem", "1.375rem"],
+      lg: ["1.5rem", "1.9rem"],
+    },
+
+    padding: {
+      80: "19.6rem",
+    },
+
     extend: {
       colors: {
         backgroundColor: "#F3F7FF",
