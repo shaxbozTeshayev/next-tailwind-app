@@ -19,9 +19,13 @@ module.exports = {
     },
 
     fontSize: {
-      sm: ["1rem", "1.25rem"],
-      md: ["1.125rem", "1.375rem"],
-      lg: ["1.5rem", "1.9rem"],
+      smPrimary: ["1rem", "1.25rem"], // text-16px, leading-20px
+      mdPrimary: ["1.125rem", "1.375rem"], // text-18px, leading-22px
+      lgPrimary: ["1.5rem", "1.9rem"], // text-24px, leading-29px
+      // "sm-secondary": ["1rem", "1.25rem"],
+      mdSecondary: ["0.75rem", "1.18rem"], // text-12px, leading-19px
+      lgSecondary: ["1.25rem", "2rem"], // text-20px, leading-32px
+      mdTertiary: ["0.875rem", "1.375rem"],
     },
 
     padding: {
