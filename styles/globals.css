@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .screenActive {
+    color: #315796;
+    border-bottom: 4px solid #315796;
+  }
+
+  .bgLinear {
+    background: linear-gradient(90deg, #315796 0%, rgba(49, 87, 150, 0.8) 100%);
+  }
+}
+
 @layer base {
   html {
     font-family: Montserrat, system-ui, sans-serif;

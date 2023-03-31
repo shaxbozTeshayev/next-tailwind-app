@@ -39,6 +39,7 @@ const Options = ({ title }) => {
       speed2: "интернет трафик ",
     },
   ];
+
   return (
     <Container className="md:py-[100px]">
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
