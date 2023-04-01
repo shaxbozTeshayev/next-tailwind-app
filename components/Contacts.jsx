@@ -3,7 +3,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <section className="relative w-full bg-mainColor md:py-[70px] md:px-[222px] lg:py-[150px] lg:px-[560px]">
+    <section className="contactBgLinear relative mt-[100px] w-full bg-mainColor md:py-[70px] md:px-[222px] lg:py-[150px] lg:px-[560px]">
       <div className="absolute h-auto md:top-[136px] md:left-[21px] md:w-[214px] lg:top-[255px] lg:left-[41px] lg:w-[214px]">
         <img src="/icons/cloud-contact1.svg" className="w-full" alt="Cloud" />
       </div>
@@ -20,7 +20,7 @@ const Contacts = () => {
         <img src="/icons/cloud-contact3.svg" alt="Cloud" className="w-full" />
       </div>
       <div className="mx-auto flex flex-col md:max-w-[580px] lg:max-w-[802px]">
-        <h2 className="text-center font-Montserrat font-medium uppercase text-backgroundColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
+        <h2 className="font-Montserrat text-center font-medium uppercase text-backgroundColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
           Хотите связаться с нами ?
         </h2>
         <div className="flex justify-between md:mt-[32px] md:gap-[20px] lg:mt-[40px] lg:gap-[30px]">
