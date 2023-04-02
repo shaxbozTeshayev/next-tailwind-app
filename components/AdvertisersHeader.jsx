@@ -9,7 +9,10 @@ const AdvertisersHeader = () => {
         <div className="flex gap-[3.75rem] py-[9.375rem]">
           <div className="w-2/3">
             <h1 className="tracking-[0.03em] text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
-              Ваша реклама на экранах смартфонов клиентов
+              <span className="inline-block font-bold">Ваша реклама</span> на
+              экранах
+              <span className="inline-block font-bold">смартфонов</span>{" "}
+              клиентов
             </h1>
             <p className="mt-[1.375rem] text-lgSecondary tracking-[0.03em] text-[#000000]">
               при подключении к WIFI сети заведения

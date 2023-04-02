@@ -28,10 +28,6 @@ module.exports = {
       mdTertiary: ["0.875rem", "1.375rem"],
     },
 
-    padding: {
-      80: "19.6rem",
-    },
-
     extend: {
       colors: {
         backgroundColor: "#F3F7FF",
