@@ -15,10 +15,10 @@ const Statistics = () => {
             className="md:h-auto md:w-[18px] lg:w-[29px]"
           />
         </div>
-        <h1 className="font-bold tracking-[0.03em] text-white md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
+        <h1 className="font-bold tracking-wide text-white md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
           200 000+{" "}
         </h1>
-        <p className="inline text-right text-lgSecondary font-medium tracking-[0.03em] text-white">
+        <p className="inline text-right text-lgSecondary font-medium tracking-wide text-white">
           Количество ежедневных просмотров активных рефералов гарантирует вам
           хорошие результаты
         </p>
@@ -33,10 +33,10 @@ const Statistics = () => {
             className="md:h-auto md:w-[18px] lg:w-[29px]"
           />
         </div>
-        <h1 className="font-bold tracking-[0.03em] text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
+        <h1 className="font-bold tracking-wide text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
           102 000+
         </h1>
-        <p className="inline text-left text-lgSecondary font-medium tracking-[0.03em] text-textMain">
+        <p className="inline text-left text-lgSecondary font-medium tracking-wide text-textMain">
           Количество ежедневных просмотров активных рефералов гарантирует вам
           хорошие результаты
         </p>

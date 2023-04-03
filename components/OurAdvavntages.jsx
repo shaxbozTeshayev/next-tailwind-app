@@ -23,7 +23,7 @@ const OurAdvavntages = ({ title }) => {
   ];
 
   return (
-    <Container className="mt-[6.25rem]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
         {title}
       </h1>

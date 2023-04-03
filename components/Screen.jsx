@@ -27,9 +27,9 @@ const Screen = () => {
   ];
 
   return (
-    <Container className="mt-[6.25rem]">
+    <Container>
       <nav className="border-b-4 px-[3.75rem] py-[2rem]">
-        <ul className=" flex items-center justify-between  text-lgSecondary tracking-[0.03em] text-textMain">
+        <ul className=" flex items-center justify-between  text-lgSecondary tracking-wide text-textMain">
           <li className="screenActive">Брендирование страницы</li>
           <li>Баннер</li>
           <li>Видеоролик</li>
@@ -45,7 +45,7 @@ const Screen = () => {
           />
         </div>
         <div className="w-3/5">
-          <h1 className="font-bold tracking-[0.03em] text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
+          <h1 className="font-bold tracking-wide text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
             Брендирование страницы
           </h1>
           <p className="mt-[10px] text-lgSecondary font-medium tracking-[0.02em] text-textMain">
@@ -64,7 +64,7 @@ const Screen = () => {
                   <span className="text-center text-lgPrimary font-bold uppercase text-mainColor">
                     {item.title}
                   </span>
-                  <span className="text-center text-lgSecondary tracking-[0.03em] text-textSecondary">
+                  <span className="text-center text-lgSecondary tracking-wide text-textSecondary">
                     {item.description}
                   </span>
                 </div>

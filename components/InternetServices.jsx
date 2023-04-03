@@ -12,7 +12,7 @@ const InternetServices = ({ title }) => {
   ];
 
   return (
-    <Container className="md:py-[5rem] lg:py-[6.25rem]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary">
         {title}
       </h1>
@@ -30,7 +30,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[20px] lg:w-[36px]"
                 />
               </div>
-              <p className="inline font-medium tracking-[0.03em] text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline font-medium tracking-wide text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Бесплатный доступ
               </p>
             </div>
@@ -44,7 +44,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[28px] lg:w-[50px]"
                 />
               </div>
-              <p className="inline font-medium tracking-[0.03em] text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline font-medium tracking-wide text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Показ рекламы
               </p>
             </div>
@@ -58,7 +58,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[18px] lg:w-[30px]"
                 />
               </div>
-              <p className="inline px-[30px] text-center font-medium tracking-[0.03em] text-textMain  md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline px-[30px] text-center font-medium tracking-wide text-textMain  md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Ограниченное время сеанса
               </p>
             </div>
@@ -72,7 +72,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[18px] lg:w-[29px]"
                 />
               </div>
-              <p className="inline text-center font-medium tracking-[0.03em] text-white md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline text-center font-medium tracking-wide text-white md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Ограниченный скорость до 2 мб/с
               </p>
             </div>
@@ -80,17 +80,17 @@ const InternetServices = ({ title }) => {
         </div>
         <div className="w-3/5">
           <div className="items-left flex flex-col justify-center md:mt-[35px] lg:mt-[60px]">
-            <h1 className="tracking-[0.03em] text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
+            <h1 className="tracking-wide text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
               Uztelecom <span className="font-bold">Free</span> Wi-Fi
             </h1>
 
-            <h2 className="mt-[13px] tracking-[0.03em] text-textMain md:text-mdSecondary lg:text-lgSecondary">
+            <h2 className="mt-[13px] tracking-wide text-textMain md:text-mdSecondary lg:text-lgSecondary">
               Как пользоваться и как подключиться?
             </h2>
 
             <ol className="mt-[25px]">
               {data.map((item) => (
-                <li className="tracking-[0.03em] text-textMain md:text-mdSecondary lg:text-lgSecondary">
+                <li className="tracking-wide text-textMain md:text-mdSecondary lg:text-lgSecondary">
                   {item}
                 </li>
               ))}
@@ -101,17 +101,17 @@ const InternetServices = ({ title }) => {
       <div className="flex md:mt-[40px] md:gap-[84px] lg:gap-[134px]">
         <div className="w-3/5">
           <div className="items-left flex flex-col justify-center md:mt-[35px] lg:mt-[60px]">
-            <h1 className="tracking-[0.03em] text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
+            <h1 className="tracking-wide text-mainColor md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3.375rem] lg:leading-[4.125rem]">
               Uztelecom <span className="font-bold">Free</span> Wi-Fi
             </h1>
 
-            <h2 className="mt-[13px] tracking-[0.03em] text-textMain md:text-mdSecondary lg:text-lgSecondary">
+            <h2 className="mt-[13px] tracking-wide text-textMain md:text-mdSecondary lg:text-lgSecondary">
               Как пользоваться и как подключиться?
             </h2>
 
             <ol className="mt-[25px]">
               {data.map((item) => (
-                <li className="tracking-[0.03em] text-textMain md:text-mdSecondary lg:text-lgSecondary">
+                <li className="tracking-wide text-textMain md:text-mdSecondary lg:text-lgSecondary">
                   {item}
                 </li>
               ))}
@@ -131,7 +131,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[20px] lg:w-[36px]"
                 />
               </div>
-              <p className="inline font-medium tracking-[0.03em] text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline font-medium tracking-wide text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Бесплатный доступ
               </p>
             </div>
@@ -145,7 +145,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[28px] lg:w-[50px]"
                 />
               </div>
-              <p className="inline font-medium tracking-[0.03em] text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline font-medium tracking-wide text-textMain md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Показ рекламы
               </p>
             </div>
@@ -159,7 +159,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[18px] lg:w-[30px]"
                 />
               </div>
-              <p className="inline px-[30px] text-center font-medium tracking-[0.03em] text-textMain  md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline px-[30px] text-center font-medium tracking-wide text-textMain  md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Ограниченное время сеанса
               </p>
             </div>
@@ -173,7 +173,7 @@ const InternetServices = ({ title }) => {
                   className="md:h-auto md:w-[18px] lg:w-[29px]"
                 />
               </div>
-              <p className="inline text-center font-medium tracking-[0.03em] text-white md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
+              <p className="inline text-center font-medium tracking-wide text-white md:mt-[23px] md:text-mdSecondary lg:mt-[40px] lg:text-lgSecondary">
                 Ограниченный скорость до 2 мб/с
               </p>
             </div>

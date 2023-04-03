@@ -1,7 +1,8 @@
-import Contacts from "@/components/Contacts";
-import Footer from "@/components/Footer";
+import ContactsMain from "@/components/ContactsMain";
+
+import Footer from "@/components/Layout/Footer";
 import HeaderSection from "@/components/HeaderSection";
-import MainNavigation from "@/components/MainNavigation";
+import MainNavigation from "@/components/Layout/MainNavigation";
 import Map from "@/components/Map";
 import News from "@/components/News";
 import OurServices from "@/components/OurServices";
@@ -23,7 +24,7 @@ export default function Home() {
         <OurServices />
         <WhyUs />
         <Map />
-        <Contacts />
+        <ContactsMain />
         <News />
         <Footer />
       </main>

@@ -19,7 +19,7 @@ const WorkStages = ({ title }) => {
   ];
 
   return (
-    <Container className="mt-[6.25rem]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
         {title}
       </h1>
@@ -33,7 +33,7 @@ const WorkStages = ({ title }) => {
             <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-mainColor text-[2rem] text-white">
               {item.num}
             </div>
-            <p className="inline text-center text-lgSecondary font-medium tracking-[0.03em]  text-mainColor">
+            <p className="inline text-center text-lgSecondary font-medium tracking-wide  text-mainColor">
               {item.title}
             </p>
           </div>

@@ -1,13 +1,14 @@
-import Layout from "@/components/Layout";
+import Layout from "@/components/Layout/Layout";
 import Statistics from "@/components/Statistics";
 import Screen from "@/components/Screen";
 import React from "react";
 import OurAdvavntages from "@/components/OurAdvavntages";
 import WorkStages from "@/components/WorkStages";
-import Contacts from "@/components/Contacts";
-import AdvertisersHeader from "@/components/AdvertisersHeader";
 
-const forAdvertises = () => {
+import AdvertisersHeader from "@/components/AdvertisersHeader";
+import ContactsMain from "@/components/ContactsMain";
+
+const advertises = () => {
   return (
     <Layout>
       <AdvertisersHeader />
@@ -15,9 +16,9 @@ const forAdvertises = () => {
       <Screen />
       <OurAdvavntages title="Наши преимущество" />
       <WorkStages title="Этапы работы " />
-      <Contacts />
+      <ContactsMain />
     </Layout>
   );
 };
 
-export default forAdvertises;
+export default advertises;

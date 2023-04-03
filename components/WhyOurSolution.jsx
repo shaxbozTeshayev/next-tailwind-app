@@ -32,7 +32,7 @@ const WhyOurSolution = ({ title }) => {
   ];
 
   return (
-    <Container className="mt-[6.25rem]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
         {title}
       </h1>
@@ -42,7 +42,7 @@ const WhyOurSolution = ({ title }) => {
             <span className="flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-mainColor">
               <Image src={item.icon} width={32} height={32} />
             </span>
-            <p className="mt-[2rem] inline text-center text-lgSecondary text-textMain">
+            <p className="mt-[2rem] inline text-center text-lgSecondary tracking-wide text-textMain">
               {item.title}
             </p>
           </div>

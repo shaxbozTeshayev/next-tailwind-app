@@ -5,16 +5,16 @@ import Container from "./Container";
 const AdvertisersHeader = () => {
   return (
     <div className="relative min-h-screen">
-      <Container className="">
+      <Container>
         <div className="flex gap-[3.75rem] py-[9.375rem]">
           <div className="w-2/3">
-            <h1 className="tracking-[0.03em] text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
+            <h1 className="tracking-wide text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
               <span className="inline-block font-bold">Ваша реклама</span> на
               экранах
               <span className="inline-block font-bold">смартфонов</span>{" "}
               клиентов
             </h1>
-            <p className="mt-[1.375rem] text-lgSecondary tracking-[0.03em] text-[#000000]">
+            <p className="mt-[1.375rem] text-lgSecondary tracking-wide text-[#000000]">
               при подключении к WIFI сети заведения
             </p>
             <button className="shadow-[0_5px_15px_-10px_rgba(116, 104, 255, 0.2)] mt-[4.6rem] inline-block rounded-[5px] bg-mainColor text-center text-white lg:mt-[2.6rem] lg:px-[1.75rem] lg:py-[14px]">

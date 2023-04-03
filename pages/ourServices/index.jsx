@@ -1,9 +1,9 @@
 import React from "react";
-import MainNavigation from "@/components/MainNavigation";
+import MainNavigation from "@/components/Layout/MainNavigation";
 import InternetServices from "@/components/InternetServices";
 import Options from "@/components/Options";
-import Footer from "@/components/Footer";
-import Layout from "@/components/Layout";
+import Footer from "@/components/Layout/Footer";
+import Layout from "@/components/Layout/Layout";
 
 const ourServices = () => {
   return (

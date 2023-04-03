@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const HeaderSection = () => {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-screen">
       <div className="mx-auto flex flex-col items-center  md:px-[163px] lg:px-[504px]">
-        <h1 className="font-Montserrat text-center font-normal italic tracking-[.03em] text-mainColor md:mt-[60px] md:text-[48px]  md:leading-[59px] lg:mt-[100px] lg:text-[60px] lg:leading-[73px]">
+        <h1 className="text-center font-normal italic tracking-wide text-mainColor md:mt-[60px] md:text-[48px]  md:leading-[59px] lg:mt-[100px] lg:text-[60px] lg:leading-[73px]">
           Повысьте <span className="font-bold">продуктивность</span> вашей
           компании
         </h1>
-        <p className="font-Montserrat px-[55px] text-center font-medium italic tracking-[.03em] text-textMain md:mt-[30px] md:text-[18px] md:leading-[29px] lg:mt-[40px] lg:text-[20px] lg:leading-[32px]">
+        <p className="px-[55px] text-center font-medium italic tracking-wide text-textMain md:mt-[30px] md:text-[18px] md:leading-[29px] lg:mt-[40px] lg:text-[20px] lg:leading-[32px]">
           Услуги нашего оператора Wi-Fi могут стать отличным подспорьем для
           развития вашего бизнеса, поэтому свяжитесь с нами и получите множество
           наших предложений!!!

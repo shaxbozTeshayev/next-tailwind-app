@@ -1,5 +1,5 @@
 import React from "react";
-import CardNews from "./CardNews";
+import CardNews from "./ui/CardNews";
 import Image from "next/image";
 import Container from "./Container";
 
@@ -26,11 +26,11 @@ const newsCardData = [
 
 const News = () => {
   return (
-    <Container className="md:py-[60px] lg:py-[100px]">
+    <Container>
       <h2 className="text-center font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
         Новости
       </h2>
-      <div className="container mx-auto tracking-[.03em] md:mt-[27px] lg:mt-[40px]">
+      <div className="container mx-auto tracking-wide md:mt-[27px] lg:mt-[40px]">
         <CardNews newsCardData={newsCardData} />
       </div>
       <div className="mt-[24px] justify-center gap-[23px] align-middle md:hidden lg:flex">

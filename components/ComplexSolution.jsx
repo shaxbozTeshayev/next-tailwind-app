@@ -42,7 +42,7 @@ const ComplexSolution = ({ title }) => {
   ];
 
   return (
-    <Container className="md:py-[100px]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
         {title}
       </h1>
@@ -63,10 +63,10 @@ const ComplexSolution = ({ title }) => {
                   className=""
                 />
                 <div className="flex flex-col md:ml-[10px] lg:ml-[18px] ">
-                  <span className="font-medium tracking-[0.02em] text-[#3C3C3C] md:text-mdTertiary lg:text-lgPrimary">
+                  <span className="font-medium tracking-wide text-[#3C3C3C] md:text-mdTertiary lg:text-lgPrimary">
                     {data.speed1}
                   </span>
-                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-[0.03em] md:text-[0.625rem] md:leading-[0.75rem] lg:text-[1rem] lg:leading-[1.625rem]">
+                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-wide md:text-[0.625rem] md:leading-[0.75rem] lg:text-[1rem] lg:leading-[1.625rem]">
                     {data.speed2}
                   </span>
                 </div>

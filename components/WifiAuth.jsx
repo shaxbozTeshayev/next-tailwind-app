@@ -19,7 +19,7 @@ const WifiAuth = ({ title }) => {
   ];
 
   return (
-    <Container className="mt-[6.25rem]">
+    <Container>
       <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
         {title}
       </h1>
@@ -32,7 +32,7 @@ const WifiAuth = ({ title }) => {
             <div className="flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-mainColor">
               <Image src={item.icon} width={30} height={30} />
             </div>
-            <p className="inline text-center text-lgSecondary font-medium tracking-[0.03em]  text-textMain">
+            <p className="inline text-center text-lgSecondary font-medium tracking-wide  text-textMain">
               {item.description}
             </p>
           </div>
