@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Container from "./Container";
 
-const Map = () => {
+const Map = ({ title }) => {
   return (
-    <div className="w-full bg-white md:mt-[20px] lg:mt-[100px]">
+    <div className="w-full bg-white">
       <Container>
-        <h2 className="text-center font-Montserrat font-medium uppercase text-darkColor md:pt-[40px] md:text-[18px] md:leading-[22px] lg:pt-[50px] lg:text-[24px] lg:italic lg:leading-[29px]">
-          Наши филиалы
+        <h2 className="mt-10 text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
+          {title}
         </h2>
-        <div className="pb-[70px]">
+        <div className="p-5">
           <img src="/images/Map.png" className="h-auto w-full" />
         </div>
       </Container>

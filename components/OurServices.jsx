@@ -30,13 +30,13 @@ const cardData = [
   },
 ];
 
-const OurServices = () => {
+const OurServices = ({ title }) => {
   return (
     <Container>
-      <h2 className="text-center uppercase italic text-darkColor md:text-[18px] md:font-normal md:leading-[22px] lg:text-[24px] lg:font-medium lg:leading-[29px]">
-        Наши услуги
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
+        {title}
       </h2>
-      <div className="mt-[40px] flex w-full justify-center md:gap-[20px] lg:gap-[85px]">
+      <div className="mt-5 flex flex-col items-center justify-between gap-5 md:flex-row xl:mt-8">
         <Card cardData={cardData} />
       </div>
     </Container>

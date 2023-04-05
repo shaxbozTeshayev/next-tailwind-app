@@ -45,7 +45,7 @@ const Screen = () => {
           />
         </div>
         <div className="w-3/5">
-          <h1 className="font-bold tracking-wide text-mainColor lg:text-[3.375rem] lg:leading-[4.125rem]">
+          <h1 className="font-bold tracking-wide text-mainColor text-[3.375rem] leading-[4.125rem]">
             Брендирование страницы
           </h1>
           <p className="mt-[10px] text-lgSecondary font-medium tracking-[0.02em] text-textMain">

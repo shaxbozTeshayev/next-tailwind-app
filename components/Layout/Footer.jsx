@@ -10,12 +10,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="items-left mx-auto flex w-full flex-col justify-center bg-white pt-[50px] pb-[18px] md:px-[128px] lg:px-[187px]">
+    <footer className="items-left mx-auto flex w-full flex-col justify-center bg-white pt-[50px] pb-[18px] md:px-[128px] px-[187px]">
       <div className="text-fourthBlack font-Hexaframe text-[36px] leading-[43px] text-mainColor">
         UzCloud
       </div>
-      <div className="flex justify-between md:mt-[40px] md:flex-col lg:flex-row">
-        <div className="md-[40px] lg:align-center flex gap-[40px] lg:mt-[37px] lg:justify-center">
+      <div className="flex justify-between md:mt-[40px] md:flex-col flex-row">
+        <div className="md-[40px] align-center flex gap-[40px] mt-[37px] justify-center">
           {navigation.map((item, idx) => (
             <Link
               href="/"
@@ -52,8 +52,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <div className="border-solid-[#F3F7FF] mx-auto h-0 rotate-180 border-[1px] md:mt-[50px] md:w-[768px] lg:mt-[18px] lg:w-[1549px] "></div> */}
-      <p className="dark:border-trueGray-700 border-solid-[#F3F7FF] border-t text-[14px] font-medium italic leading-[22px] text-coolGray md:mt-[15px] lg:mt-[18px]">
+      {/* <div className="border-solid-[#F3F7FF] mx-auto h-0 rotate-180 border-[1px] md:mt-[50px] md:w-[768px] mt-[18px] w-[1549px] "></div> */}
+      <p className="dark:border-trueGray-700 border-solid-[#F3F7FF] border-t text-[14px] font-medium italic leading-[22px] text-coolGray md:mt-[15px] mt-[18px]">
         © {new Date().getFullYear()} АК "Узбектелеком". Все услуги
         лицензированы.
       </p>

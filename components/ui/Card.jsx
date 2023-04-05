@@ -5,26 +5,30 @@ const Card = (props) => {
   return (
     <>
       {props.cardData.map((data) => (
-        <div className="relative flex flex-col rounded-[10px] bg-white md:h-auto md:w-1/3 md:p-[15px] lg:h-auto lg:w-1/3 lg:p-[20px]">
-          <h5 className="  font-medium italic  text-[#315796]/[0.6] md:text-[12px] md:leading-[19px] lg:text-[14px] lg:leading-[22px]">
+        <div className="relative flex h-auto flex-col rounded-lg bg-white p-5 md:w-1/3">
+          <h5 className="text-sm font-medium  text-mainColor xl:italic">
             {data.title1}
           </h5>
-          <h2 className=" font-semibold italic text-mainColor md:mt-[4px] md:text-[16px] md:leading-[20px] lg:mt-[12px] lg:text-[24px] lg:leading-[29px]">
+          <h2 className="mt-1 text-xl font-semibold text-mainColor lg:text-2xl xl:italic">
             {data.title2}
           </h2>
-          <div className="absolute flex justify-center rounded-full bg-backgroundColor text-center md:top-[15px] md:right-[15px] md:h-[46px] md:w-[46px] lg:top-[20px] lg:right-[20px] lg:h-[70px] lg:w-[70px]">
-            <Image src={data.icon} width={30} height={30} alt={data.title2} />
+          <div className="absolute top-[15px] right-[15px] flex h-12 w-12 items-center justify-center rounded-full bg-backgroundColor text-center">
+            <Image
+              src={data.icon}
+              width={24}
+              className="h-6 w-6"
+              height={24}
+              alt={data.title2}
+            />
           </div>
-          <p className=" font-medium italic text-coolGray md:mt-[15px] md:text-[14px] md:leading-[22px] lg:mt-[27px] lg:text-[16px] lg:leading-[26px]">
+          <p className="mt-4 text-sm font-medium text-coolGray md:mt-6 xl:italic">
             {data.description}
           </p>
 
           {/* button */}
-          <div className="shadow-[0px 2px 8px rgba(49, 87, 150, 0.2)] mt-[45px] flex justify-center rounded-[4px] bg-illustrationColor px-[16px] py-[7px]  md:h-[32px] md:w-[110px] md:py-[6px] md:px-[18px] lg:h-[36px] lg:w-[120px] lg:px-[16px]  lg:py-[7px]  ">
-            <span className="inline-block cursor-pointer font-medium text-white md:text-[12px] md:leading-[19px] lg:text-[14px]  lg:leading-[22px]">
-              Подробнее
-            </span>
-          </div>
+          <button className="mt-10 rounded-md bg-illustrationColor py-1.5 px-4 text-center text-xs text-white shadow outline-none md:mt-5 xl:text-sm xl:italic">
+            Подробнее
+          </button>
         </div>
       ))}
     </>

@@ -24,7 +24,7 @@ const OurAdvavntages = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
+      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
         {title}
       </h1>
       <div className="mt-[3.75rem] grid grid-cols-4 gap-[1.25rem]">

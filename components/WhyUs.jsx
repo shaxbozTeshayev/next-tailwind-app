@@ -3,25 +3,54 @@ import React from "react";
 import { whyUsData } from "../data/data";
 import Container from "./Container";
 
-const WhyUs = () => {
+const WhyUs = ({ title }) => {
+  const data = [
+    {
+      num: "01",
+      word1: "Широкое",
+      word2: "покрытие",
+    },
+    {
+      num: "02",
+
+      word1: "Низкие",
+      word2: "цены",
+    },
+    {
+      num: "03",
+      word1: "Безопасность",
+      word2: "подключения",
+    },
+    {
+      num: "04",
+      word1: "Низкое",
+      word2: "энергопотреб",
+    },
+    {
+      num: "05",
+      word1: "Сбор",
+      word2: "данных",
+    },
+  ];
+
   return (
     <Container>
-      <h2 className="text-center font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] lg:text-[24px] lg:italic lg:leading-[29px]">
-        Почему мы
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
+        {title}
       </h2>
-      <div className="flex justify-between md:mt-[54px] lg:mt-[48px]">
-        {whyUsData.map((data) => (
-          <div className="flex flex-col items-center md:gap-[20px] lg:justify-center lg:gap-[54px]">
-            <div className="rounded-full bg-mainColor text-center italic text-white md:h-[46px] md:w-[46px] md:p-[11px] md:text-[18px] md:leading-[22px]  lg:h-[70px] lg:w-[70px] lg:p-[17px] lg:text-[30px] lg:leading-[37px]">
-              {data.num}
+      <div className="mt-5 flex flex-col justify-between gap-8 md:mt-14 md:flex-row">
+        {data.map((item) => (
+          <div className="flex gap-10 md:flex-col md:items-center">
+            <div className="h-20 w-20 rounded-full bg-mainColor p-4 text-center text-3xl text-white xl:italic">
+              {item.num}
             </div>
-            <p className="text-center">
-              <span className="text-center font-medium italic tracking-wide text-mainColor md:text-[18px] md:leading-[29px] lg:text-[20px] lg:leading-[32px]">
-                {data.word1}
+            <p className="md:text-center">
+              <span className="text-center text-xl font-medium tracking-wide text-mainColor xl:italic">
+                {item.word1}
               </span>
               <br />
-              <span className="text-center font-medium italic tracking-wide text-mainColor lg:text-[20px] lg:leading-[32px]">
-                {data.word2}
+              <span className="text-center text-xl font-medium tracking-wide text-mainColor xl:italic">
+                {item.word2}
               </span>
             </p>
           </div>

@@ -21,9 +21,9 @@ export default function Home() {
       <main className="font-Montserrat">
         <MainNavigation />
         <HeaderSection />
-        <OurServices />
-        <WhyUs />
-        <Map />
+        <OurServices title="Наши услуги" />
+        <WhyUs title="Почему мы" />
+        <Map title="Наши филиалы" />
         <ContactsMain />
         <News />
         <Footer />

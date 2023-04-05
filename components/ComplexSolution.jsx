@@ -43,18 +43,18 @@ const ComplexSolution = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary lg:text-lgPrimary ">
+      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
         {title}
       </h1>
-      <div className="mt-[40px] flex md:gap-[18px] lg:gap-[30px]">
+      <div className="mt-[40px] flex md:gap-[18px] gap-[30px]">
         {cardData1.map((item) => (
-          <div className="w-1/4 rounded-[10px] bg-white md:p-[18px] lg:p-[1.4rem]">
-            <h3 className="font-bold uppercase text-textSecondary md:text-mdTertiary lg:text-lgPrimary">
+          <div className="w-1/4 rounded-[10px] bg-white md:p-[18px] p-[1.4rem]">
+            <h3 className="font-bold uppercase text-textSecondary md:text-mdTertiary text-lgPrimary">
               {item.time}
             </h3>
 
             {cardData2.map((data) => (
-              <div className="flex items-center md:mt-[18px] lg:mt-[30px]">
+              <div className="flex items-center md:mt-[18px] mt-[30px]">
                 <Image
                   width={32}
                   height={32}
@@ -62,18 +62,18 @@ const ComplexSolution = ({ title }) => {
                   alt="Key"
                   className=""
                 />
-                <div className="flex flex-col md:ml-[10px] lg:ml-[18px] ">
-                  <span className="font-medium tracking-wide text-[#3C3C3C] md:text-mdTertiary lg:text-lgPrimary">
+                <div className="flex flex-col md:ml-[10px] ml-[18px] ">
+                  <span className="font-medium tracking-wide text-[#3C3C3C] md:text-mdTertiary text-lgPrimary">
                     {data.speed1}
                   </span>
-                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-wide md:text-[0.625rem] md:leading-[0.75rem] lg:text-[1rem] lg:leading-[1.625rem]">
+                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-wide md:text-[0.625rem] md:leading-[0.75rem] text-[1rem] leading-[1.625rem]">
                     {data.speed2}
                   </span>
                 </div>
               </div>
             ))}
-            <div className="border-solid-[rgba(29, 36, 43, 0.3)] flex items-center border-t md:mt-[20px] md:pt-[12px] lg:mt-[25px] lg:pt-[20px] ">
-              <span className="font-semibold uppercase text-textMain md:text-mdTertiary  lg:text-lgPrimary">
+            <div className="border-solid-[rgba(29, 36, 43, 0.3)] flex items-center border-t md:mt-[20px] md:pt-[12px] mt-[25px] pt-[20px] ">
+              <span className="font-semibold uppercase text-textMain md:text-mdTertiary  text-lgPrimary">
                 {item.price}
               </span>
             </div>
