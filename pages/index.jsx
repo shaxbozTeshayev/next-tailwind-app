@@ -25,7 +25,7 @@ export default function Home() {
         <WhyUs title="Почему мы" />
         <Map title="Наши филиалы" />
         <ContactsMain />
-        <News />
+        <News title="Новости" />
         <Footer />
       </main>
     </>

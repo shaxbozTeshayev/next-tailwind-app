@@ -28,12 +28,12 @@ const ContactsMain = () => {
           <input
             type="text"
             placeholder="Ваше полное имя"
-            className="w-2/5 rounded-md border border-solid border-[#174880] p-5 text-base font-medium placeholder:text-coolGray md:placeholder:italic"
+            className="rounded-md border border-solid border-[#174880] p-5 text-base font-medium placeholder:text-coolGray md:w-2/5 md:placeholder:italic"
           />
           <input
             type="text"
             placeholder="Введите свой номер телефона"
-            className="w-3/5 rounded-md border border-solid border-[#174880] p-5 text-base font-medium placeholder:text-coolGray md:placeholder:italic"
+            className="rounded-md border border-solid border-[#174880] p-5 text-base font-medium placeholder:text-coolGray md:w-3/5 md:placeholder:italic"
           />
           <button
             type="button"

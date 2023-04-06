@@ -3,19 +3,23 @@ import Image from "next/image";
 
 const CardNews = (props) => {
   return (
-    <div className="grid gap-[20px] md:grid-cols-2 grid-cols-3">
+    <div className="container mt-5 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
       {props.newsCardData.map((data) => (
-        <div className="max-w overflow-hidden">
-          <img
-            src={data.newsImg}
-            alt="Card Image"
-            className="h-auto rounded-t-lg md:w-[374px] w-[372px]"
-          />
-          <div className="mt-[5px]">
-            <span className="  font-medium uppercase italic text-textSecondary md:text-[12px] md:leading-[19px] text-[16px] leading-[26px]">
+        <div className="overflow-hidden">
+          <div>
+            <Image
+              src={data.newsImg}
+              width={335}
+              height={200}
+              alt="Card Image"
+              className=""
+            />
+          </div>
+          <div className="mt-1.5">
+            <span className="text-xs font-medium uppercase text-textSecondary xl:italic">
               {data.newsTime}
             </span>
-            <p className=" font-medium uppercase text-textMain md:mt-[16px] mt-[9px] text-[20px] italic leading-[32px]">
+            <p className=" mt-4 text-lg font-medium uppercase text-textMain md:text-xl xl:italic">
               {data.newsDescription}
             </p>
           </div>

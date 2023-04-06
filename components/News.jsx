@@ -24,16 +24,16 @@ const newsCardData = [
   },
 ];
 
-const News = () => {
+const News = ({ title }) => {
   return (
-    <Container>
-      <h2 className="text-center font-medium uppercase text-darkColor md:text-[18px] md:leading-[22px] text-[24px] italic leading-[29px]">
-        Новости
+    <Container className="mb-24">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
+        {title}
       </h2>
-      <div className="container mx-auto tracking-wide md:mt-[27px] mt-[40px]">
-        <CardNews newsCardData={newsCardData} />
-      </div>
-      <div className="mt-[24px] justify-center gap-[23px] align-middle md:hidden flex">
+
+      <CardNews newsCardData={newsCardData} />
+
+      <div className="mt-[24px] hidden justify-center gap-[23px]  md:flex">
         <button className="cursor-pointer rounded-full bg-white py-[27px] px-[23px]">
           <Image src="/icons/btnLeft.svg" width={24} height={16} />
         </button>
