@@ -4,26 +4,21 @@ import React from "react";
 
 const Footer = () => {
   const navigation = [
-    { href: "/", title: "Интернет" },
+    { href: "/internet", title: "Интернет" },
     { href: "/business", title: "Для бизнес" },
     { href: "/advertises", title: "Для рекломодателей" },
     { href: "/contact", title: "Контакты" },
   ];
 
   return (
-    <footer className="mx-auto flex w-full flex-col justify-center bg-white px-5 md:px-32">
+    <footer className="mx-auto flex w-full flex-col justify-center bg-white px-8 md:px-28">
       <div className="mt-8">
         <Link href="/">
-          <Image
-            src="/images/UzCloud.png"
-            width="166"
-            height="43"
-            className="md:h-7 md:w-28 xl:h-11 xl:w-40"
-          />
+          <Image src="/images/UzCloud.png" width={166} height={43} />
         </Link>
       </div>
-      <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:gap-24">
-        <div className="mt-5 flex flex-col gap-5 md:order-last md:flex-row md:gap-24">
+      <div className="xl:gap-18 flex flex-col xl:flex-row xl:items-center xl:justify-between">
+        <div className="md:gap-18 mt-5 flex flex-col gap-5 md:order-last md:flex-row">
           <div className="">
             <p className=" text-base font-medium text-textSecondary md:italic">
               Наш номер телефона
@@ -41,7 +36,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="mt-5 flex flex-col gap-7 md:flex-row md:gap-10">
+        <div className="mt-5 flex flex-col gap-3 md:flex-row md:gap-6">
           {navigation.map((item, idx) => (
             <Link
               key={idx}

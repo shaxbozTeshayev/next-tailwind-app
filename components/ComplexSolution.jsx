@@ -48,32 +48,32 @@ const ComplexSolution = ({ title }) => {
       </h2>
       <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
         {cardData1.map((item) => (
-          <div className="rounded-lg bg-white p-7 hover:bg-mainColor md:p-4">
-            <h3 className="text-2xl font-bold uppercase text-textSecondary">
+          <div className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6">
+            <h3 className="text-2xl font-bold uppercase text-textSecondary group-hover:text-white">
               {item.time}
             </h3>
 
             {cardData2.map((data) => (
-              <div className="mt-7 flex items-center">
+              <div className="mt-7 flex items-center group-hover:stroke-white">
                 <Image
                   width={32}
                   height={32}
                   src={data.icon}
                   alt="Key"
-                  className=""
+                  className="rounded-full group-hover:bg-white"
                 />
                 <div className="ml-5 flex flex-col">
-                  <span className="text-2xl font-medium tracking-wide text-[#3C3C3C]">
+                  <span className="text-2xl font-medium tracking-wide text-[#3C3C3C] group-hover:text-white">
                     {data.speed1}
                   </span>
-                  <span className="text-[rgba(29, 36, 43, 0.6)] text-lg font-medium tracking-wide">
+                  <span className="text-[rgba(29, 36, 43, 0.6)] text-lg font-medium tracking-wide group-hover:text-white">
                     {data.speed2}
                   </span>
                 </div>
               </div>
             ))}
             <div className="border-solid-[rgba(29, 36, 43, 0.3)] mt-6 flex items-center border-t pt-5">
-              <span className="text-center text-2xl font-semibold uppercase  text-textMain">
+              <span className="text-center text-2xl font-semibold uppercase text-textMain  group-hover:text-white">
                 {item.price}
               </span>
             </div>

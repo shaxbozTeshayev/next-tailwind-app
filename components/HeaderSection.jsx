@@ -4,8 +4,8 @@ import Image from "next/image";
 const HeaderSection = () => {
   return (
     <section className="relative h-screen">
-      <div className="mx-auto flex flex-col items-center px-5 md:px-40">
-        <h1 className="mt-64 text-center text-3xl font-normal tracking-wide text-mainColor lg:mt-16 lg:text-5xl lg:italic xl:mt-24 xl:text-6xl">
+      <div className=" mx-auto flex flex-col items-center px-5 md:px-40">
+        <h1 className="z-10 mt-64 text-center text-3xl font-normal tracking-wide text-mainColor lg:mt-16 lg:text-5xl lg:italic xl:mt-24 xl:text-6xl">
           Повысьте <span className="font-bold">продуктивность</span> вашей
           компании
         </h1>
@@ -18,15 +18,8 @@ const HeaderSection = () => {
           Оставить заявку
         </button>
       </div>
-      {/* <div className="absolute top-[45px] left-[215px] block md:hidden">
-        <Image
-          src="/icons/headerCloud1.svg"
-          alt="Cloud"
-          width={315}
-          height={235}
-        />
-      </div>
-      <div className="absolute top-[25px] left-[1800px] md:left-[901px] md:top-[148px]">
+
+      <div className="absolute top-[25px] left-[280px] z-0 md:left-[900px] md:top-[100px]">
         <Image
           src="/icons/headerCloud2.svg"
           alt="Cloud"
@@ -34,15 +27,8 @@ const HeaderSection = () => {
           height={92}
         />
       </div>
-      <div className="absolute top-[143px] left-[1373px] block md:hidden">
-        <Image
-          src="/icons/headerCloud3.svg"
-          alt="Cloud"
-          width={273}
-          height={223}
-        />
-      </div>
-      <div className="absolute top-[304px] left-0 md:top-[159px] md:left-0">
+
+      <div className="absolute hidden md:top-[129px] md:left-0 md:block">
         <Image
           src="/icons/headerCloud4.svg"
           alt="Cloud"
@@ -50,7 +36,7 @@ const HeaderSection = () => {
           height={125}
         />
       </div>
-      <div className="absolute top-[450px] left-[407px] md:top-[467px] md:left-[-4px]">
+      <div className="md:left-300px absolute top-[100px] left-[36px] md:top-[380px]">
         <Image
           src="/icons/headerCloud5.svg"
           alt="Cloud"
@@ -58,38 +44,15 @@ const HeaderSection = () => {
           height={94}
         />
       </div>
-      <div className="absolute top-[614px] left-[160px] md:top-[787px] md:left-[114px]">
-        <Image
-          src="/icons/headerCloud6.svg"
-          alt="Cloud"
-          width={109}
-          height={64}
-        />
-      </div>
-      <div className="absolute top-[565px] left-[1493px] md:top-[737px] md:left-[643px]">
-        <Image
-          src="/icons/headerCloud7.svg"
-          alt="Cloud"
-          width={214}
-          height={77}
-        />
-      </div>
-      <div className="absolute left-[1369px] top-[356px] md:top-[533px] md:left-[730px]">
+
+      <div className="absolute top-[550px] left-[332px] md:top-[429px] md:left-[830px]">
         <Image
           src="/icons/headerWive1.svg"
           alt="Cloud"
           width={89}
-          height={120}
+          height={100}
         />
       </div>
-      <div className="absolute left-[458px] top-[620px] md:top-[594px] md:left-[271px]">
-        <Image
-          src="/icons/headerWive1.svg"
-          alt="Cloud"
-          width={89}
-          height={120}
-        />
-      </div> */}
     </section>
   );
 };

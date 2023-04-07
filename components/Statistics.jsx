@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Statistics = () => {
   return (
-    <div className="flex w-full flex-col md:flex-row">
+    <div className="mt-10 flex w-full flex-col md:mt-96 md:flex-row">
       <div className="bgLinear flex flex-col items-center justify-center gap-4 p-7 md:w-1/2 md:items-end md:justify-end md:pl-32 md:pr-24">
         <div className="flex h-20 w-20 justify-center rounded-full bg-white">
           <Image

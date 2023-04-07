@@ -4,13 +4,13 @@ import Container from "./Container";
 
 const Contacts = ({ title }) => {
   return (
-    <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+    <Container className="pb-10">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[2.5rem] flex gap-[1rem]">
-        <div className="max-h-[25rem] w-2/5 bg-white p-[2.5rem]">
-          <ul className="flex flex-col gap-[2.5rem] text-lgSecondary tracking-wide">
+      </h2>
+      <div className="mt-10 flex flex-col gap-4 md:flex-row">
+        <div className=" bg-white p-6 md:w-2/5">
+          <ul className="flex flex-col gap-10 text-base tracking-wide">
             <li className="flex flex-col">
               <span className="font-medium text-textSecondary">Адрес</span>
               <span className="font-semibold text-textMain">

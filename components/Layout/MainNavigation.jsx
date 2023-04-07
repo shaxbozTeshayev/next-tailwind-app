@@ -5,22 +5,17 @@ import MobileNav from "../MobileNav";
 
 const MainNavigation = () => {
   const headerNavLinks = [
-    { href: "/", title: "Интернет" },
+    { href: "/internet", title: "Интернет" },
     { href: "/business", title: "Для бизнес" },
     { href: "/advertises", title: "Для рекломодателей" },
     { href: "/contact", title: "Контакты" },
   ];
 
   return (
-    <header className="flex h-16 w-full items-center justify-around bg-[#FFFFFF] md:justify-between md:py-6 md:px-32  xl:h-24  xl:py-[2.5rem] xl:px-44">
+    <header className="flex h-16 w-full items-center justify-around bg-[#FFFFFF] px-6 md:justify-between md:py-6 md:px-32  xl:h-24  xl:py-[2.5rem] xl:px-44">
       <div className="">
         <Link href="/">
-          <Image
-            src="/images/UzCloud.png"
-            width="166"
-            height="43"
-            className="md:h-7 md:w-28 xl:h-11 xl:w-40"
-          />
+          <Image src="/images/UzCloud.png" width={166} height={43} />
         </Link>
       </div>
       <nav>

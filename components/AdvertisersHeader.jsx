@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const AdvertisersHeader = () => {
   return (
-    <div className="relative md:min-h-screen">
+    <div className="relative md:h-screen">
       <Container>
         <div className="mt-16 flex flex-col gap-16 md:flex-row">
           <div className=" relative order-last h-72 md:order-2  md:h-96 md:w-2/5">
@@ -26,35 +26,43 @@ const AdvertisersHeader = () => {
           </div>
         </div>
       </Container>
-      {/* <div className="absolute top-[676px] left-[190px]">
-        <Image src="/icons/magnet.svg" alt="" width={165} height={165} />
-      </div>
-      <div className="absolute top-[620px] left-[350px] rotate-[-45deg]">
-        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
-      </div>
-      <div className="absolute top-[670px] left-[390px] rotate-[0deg]">
-        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
-      </div>
-      <div className="absolute top-[746px] left-[400px] rotate-[15deg]">
-        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
-      </div>
-      <div className="absolute top-[556px] left-[514px]">
+      <div className="absolute top-[548px] left-[30px] md:top-[676px] md:left-[190px]">
         <Image
-          src="/icons/advertisesContact.svg"
+          src="/icons/magnet.svg"
           alt=""
-          width={120}
-          height={120}
+          width={64}
+          height={64}
+          className="lg:h-[165px] lg:w-[165px]"
         />
       </div>
-      <div className="absolute top-[691px] left-[778px]">
+      <div className="absolute top-[540px] left-[70px] rotate-[-30deg] lg:top-[620px] lg:left-[350px] lg:rotate-[-45deg]">
+        <Image src="/icons/electric.svg" alt="" width={48} height={48} />
+      </div>
+      <div className="absolute top-[670px] left-[390px] hidden rotate-[0deg] lg:block">
+        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
+      </div>
+      <div className="absolute top-[746px] left-[400px] hidden rotate-[15deg] lg:block">
+        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
+      </div>
+      <div className="absolute top-[450px] left-[50px] lg:top-[556px] lg:left-[514px]">
         <Image
           src="/icons/advertisesContacts.svg"
           alt=""
-          width={96}
-          height={96}
+          width={64}
+          height={64}
+          className="lg:h-[120px] lg:w-[120px]"
         />
       </div>
-      <div className="absolute top-[404px] left-[750px]">
+      <div className="absolute top-[350px] left-[80px] lg:top-[691px] lg:left-[778px]">
+        <Image
+          src="/icons/advertisesContacts.svg"
+          alt=""
+          width={64}
+          height={64}
+          className="lg:h-[120px] lg:w-[120px]"
+        />
+      </div>
+      <div className="absolute top-[404px] left-[750px] hidden lg:block">
         <Image src="/icons/advertisesSmile.svg" alt="" width={96} height={96} />
       </div>
       <div className="absolute top-[572px] left-[929px]">
@@ -64,7 +72,7 @@ const AdvertisersHeader = () => {
           width={72}
           height={72}
         />
-      </div> */}
+      </div>
     </div>
   );
 };

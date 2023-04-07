@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactsMain = () => {
   return (
-    <section className="contactBgLinear relative mt-24 w-full bg-mainColor">
+    <section className="contactBgLinear relative w-full bg-mainColor">
       {/* <div className="absolute h-auto md:top-[136px] md:left-[21px] md:w-[214px] top-[255px] left-[41px] w-[214px]">
         <img src="/icons/cloud-contact1.svg" className="w-full" alt="Cloud" />
       </div>

@@ -19,7 +19,7 @@ const WorkStages = ({ title }) => {
   ];
 
   return (
-    <Container>
+    <Container className="mb-10">
       <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
       </h2>

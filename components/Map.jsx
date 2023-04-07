@@ -6,7 +6,7 @@ const Map = ({ title }) => {
   return (
     <div className="w-full bg-white">
       <Container>
-        <h2 className="mt-10 text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
+        <h2 className="pt-10 text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal xl:italic">
           {title}
         </h2>
         <div className="p-5">

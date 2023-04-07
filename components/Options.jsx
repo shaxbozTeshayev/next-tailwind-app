@@ -5,78 +5,75 @@ import Image from "next/image";
 const Options = ({ title }) => {
   const cardData1 = [
     {
-      time: "1 час",
-      price: "1000 Uzs",
+      time: "Базовый",
+      price: "1 250 000 Uzs / мес",
     },
     {
-      time: "1 час",
-      price: "1000 Uzs",
+      time: "Базовый",
+      price: "1 250 000 Uzs / мес",
     },
     {
-      time: "1 час",
-      price: "1000 Uzs",
+      time: "Базовый",
+      price: "1 250 000 Uzs / мес",
     },
-    {
-      time: "1 час",
-      price: "1000 Uzs",
-    },
+    // {
+    //   time: "Базовый",
+    //   price: "1 250 000 Uzs / мес",
+    // },
   ];
 
   const cardData2 = [
     {
       icon: "/icons/OurServicesIconSpeed.svg",
-      speed1: "10 Мбит/сек",
-      speed2: "скорость",
+      speed1: "До 4 точек",
+      speed2: "количество точек",
     },
     {
       icon: "/icons/OurServicesIconClockBlue.svg",
-      speed1: "1 час",
-      speed2: "срок действия",
+      speed1: "2 Мбит/сек ",
+      speed2: "скорость бесплатного",
     },
-    {
-      icon: "/icons/OurServicesIconUpBlue.svg",
-      speed1: "Не ограничен",
-      speed2: "интернет трафик ",
-    },
+    // {
+    //   icon: "/icons/OurServicesIconUpBlue.svg",
+    //   speed1: "10 Мбит/сек",
+    //   speed2: "скорость платного",
+    // },
   ];
 
   return (
-    <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+    <Container className="pb-10">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[40px] flex md:gap-[18px] gap-[30px]">
+      </h2>
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
         {cardData1.map((item) => (
-          <div className="w-1/4 rounded-[10px] bg-white md:p-[18px] p-[30px]">
-            <h3 className="font-bold uppercase text-textSecondary md:text-mdTertiary text-lgPrimary">
+          <div className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6">
+            <h3 className="text-2xl font-bold uppercase text-textSecondary group-hover:text-white">
               {item.time}
             </h3>
 
             {cardData2.map((data) => (
-              <div className="flex items-center md:mt-[18px] mt-[30px]">
+              <div className="mt-7 flex items-center group-hover:stroke-white">
                 <Image
-                  width={29}
-                  height={23}
+                  width={32}
+                  height={32}
                   src={data.icon}
                   alt="Key"
-                  className="h-auto md:w-[17px]"
+                  className="rounded-full group-hover:bg-white"
                 />
-                <div className="flex flex-col md:ml-[10px] ml-[18px] ">
-                  <span className="font-medium tracking-[0.02em] text-[#3C3C3C] md:text-mdTertiary text-lgPrimary">
+                <div className="ml-5 flex flex-col ">
+                  <span className="text-2xl font-medium tracking-wide text-[#3C3C3C] group-hover:text-white">
                     {data.speed1}
                   </span>
-                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-wide md:text-[0.625rem] md:leading-[0.75rem] text-[1rem] leading-[1.625rem]">
+                  <span className="text-[rgba(29, 36, 43, 0.6)] text-lg font-medium tracking-wide group-hover:text-white">
                     {data.speed2}
                   </span>
                 </div>
               </div>
             ))}
-            <div className="border-solid-[rgba(29, 36, 43, 0.3)] flex items-center border-t md:mt-[20px] md:pt-[12px] mt-[25px] pt-[20px] ">
-              <span className=" font-bold uppercase text-[#3C3C3C] md:text-mdTertiary  text-lgPrimary">
+            <div className="border-solid-[rgba(29, 36, 43, 0.3)] mt-6 flex items-center border-t pt-5">
+              <span className="text-center text-2xl font-semibold uppercase text-textMain  group-hover:text-white">
                 {item.price}
-              </span>
-              <span className="font-medium text-[#FF894C] line-through md:ml-[11px] md:text-[0.625rem] md:leading-[0.75rem] ml-[16px] text-[1rem] leading-[1.625rem]">
-                3000 UZS
               </span>
             </div>
           </div>

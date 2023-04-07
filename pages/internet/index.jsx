@@ -5,7 +5,7 @@ import Options from "@/components/Options";
 import Footer from "@/components/Layout/Footer";
 import Layout from "@/components/Layout/Layout";
 
-const ourServices = () => {
+const Internet = () => {
   return (
     <Layout>
       <InternetServices title="наши интернет услуги" />
@@ -14,4 +14,4 @@ const ourServices = () => {
   );
 };
 
-export default ourServices;
+export default Internet;
