@@ -20,19 +20,19 @@ const WifiAuth = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[3.75rem] grid grid-cols-3 ">
+      </h2>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 ">
         {data.map((item) => (
           <div
-            className="flex flex-col items-center justify-between
-        gap-[1.9rem]"
+            className="flex flex-col items-center justify-between gap-5
+        p-5"
           >
-            <div className="flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-mainColor">
-              <Image src={item.icon} width={30} height={30} />
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mainColor md:h-14 md:w-14">
+              <Image src={item.icon} width={24} height={24} />
             </div>
-            <p className="inline text-center text-lgSecondary font-medium tracking-wide  text-textMain">
+            <p className="inline text-center text-lg font-medium tracking-wide text-textMain  xl:text-xl">
               {item.description}
             </p>
           </div>

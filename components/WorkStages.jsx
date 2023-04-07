@@ -20,26 +20,36 @@ const WorkStages = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[3.5rem] grid grid-cols-5">
+      </h2>
+      <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-5">
         <div className="flex items-start justify-center">
-          <Image src="/icons/advertisesFeet.svg" width={48} height={48} />
+          <Image
+            src="/icons/advertisesFeet.svg"
+            width={32}
+            height={32}
+            className="md:h-[48px] md:w-[48px]"
+          />
         </div>
 
         {data.map((item) => (
-          <div className="flex flex-col items-center justify-center gap-[1.75rem]">
-            <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-mainColor text-[2rem] text-white">
+          <div className="flex flex-col items-center justify-center gap-7">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mainColor text-xl text-white md:h-20 md:w-20 lg:text-3xl">
               {item.num}
             </div>
-            <p className="inline text-center text-lgSecondary font-medium tracking-wide  text-mainColor">
+            <p className="inline text-center text-xs font-medium tracking-wide text-mainColor  xl:text-lg">
               {item.title}
             </p>
           </div>
         ))}
         <div className="flex items-start justify-center">
-          <Image src="/icons/advertisesRocket.svg" width={48} height={48} />
+          <Image
+            src="/icons/advertisesRocket.svg"
+            width={32}
+            height={32}
+            className="md:h-[48px] md:w-[48px]"
+          />
         </div>
       </div>
     </Container>

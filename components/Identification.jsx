@@ -22,16 +22,16 @@ const Identification = ({ title }) => {
   ];
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[3.75rem] grid grid-cols-3 gap-[1.5rem]">
+      </h2>
+      <div className="mt-10 grid grid-cols-3 gap-10">
         {data.map((item) => (
-          <div className="flex flex-col items-center justify-center gap-[1.4rem]">
-            <div>
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex items-center justify-center">
               <Image width={235} height={480} src={item.img} />
             </div>
-            <p className="text-center text-[1rem] font-medium leading-[1.5rem] text-textMain">
+            <p className="hidden text-center text-base font-medium text-textMain xl:inline">
               {item.description}
             </p>
           </div>

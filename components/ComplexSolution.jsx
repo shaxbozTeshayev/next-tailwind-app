@@ -17,10 +17,10 @@ const ComplexSolution = ({ title }) => {
       time: "Базовый",
       price: "1 250 000 Uzs / мес",
     },
-    {
-      time: "Базовый",
-      price: "1 250 000 Uzs / мес",
-    },
+    // {
+    //   time: "Базовый",
+    //   price: "1 250 000 Uzs / мес",
+    // },
   ];
 
   const cardData2 = [
@@ -34,27 +34,27 @@ const ComplexSolution = ({ title }) => {
       speed1: "2 Мбит/сек ",
       speed2: "скорость бесплатного",
     },
-    {
-      icon: "/icons/OurServicesIconUpBlue.svg",
-      speed1: "10 Мбит/сек",
-      speed2: "скорость платного",
-    },
+    // {
+    //   icon: "/icons/OurServicesIconUpBlue.svg",
+    //   speed1: "10 Мбит/сек",
+    //   speed2: "скорость платного",
+    // },
   ];
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[40px] flex md:gap-[18px] gap-[30px]">
+      </h2>
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
         {cardData1.map((item) => (
-          <div className="w-1/4 rounded-[10px] bg-white md:p-[18px] p-[1.4rem]">
-            <h3 className="font-bold uppercase text-textSecondary md:text-mdTertiary text-lgPrimary">
+          <div className="rounded-lg bg-white p-7 hover:bg-mainColor md:p-4">
+            <h3 className="text-2xl font-bold uppercase text-textSecondary">
               {item.time}
             </h3>
 
             {cardData2.map((data) => (
-              <div className="flex items-center md:mt-[18px] mt-[30px]">
+              <div className="mt-7 flex items-center">
                 <Image
                   width={32}
                   height={32}
@@ -62,18 +62,18 @@ const ComplexSolution = ({ title }) => {
                   alt="Key"
                   className=""
                 />
-                <div className="flex flex-col md:ml-[10px] ml-[18px] ">
-                  <span className="font-medium tracking-wide text-[#3C3C3C] md:text-mdTertiary text-lgPrimary">
+                <div className="ml-5 flex flex-col">
+                  <span className="text-2xl font-medium tracking-wide text-[#3C3C3C]">
                     {data.speed1}
                   </span>
-                  <span className="text-[rgba(29, 36, 43, 0.6)] font-medium tracking-wide md:text-[0.625rem] md:leading-[0.75rem] text-[1rem] leading-[1.625rem]">
+                  <span className="text-[rgba(29, 36, 43, 0.6)] text-lg font-medium tracking-wide">
                     {data.speed2}
                   </span>
                 </div>
               </div>
             ))}
-            <div className="border-solid-[rgba(29, 36, 43, 0.3)] flex items-center border-t md:mt-[20px] md:pt-[12px] mt-[25px] pt-[20px] ">
-              <span className="font-semibold uppercase text-textMain md:text-mdTertiary  text-lgPrimary">
+            <div className="border-solid-[rgba(29, 36, 43, 0.3)] mt-6 flex items-center border-t pt-5">
+              <span className="text-center text-2xl font-semibold uppercase  text-textMain">
                 {item.price}
               </span>
             </div>

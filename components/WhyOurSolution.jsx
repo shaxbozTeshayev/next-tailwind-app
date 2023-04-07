@@ -33,16 +33,16 @@ const WhyOurSolution = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mx-[4rem] mt-[3.75rem] grid grid-cols-3 gap-[1.25rem]">
+      </h2>
+      <div className="mt-5 grid grid-cols-2 gap-5 md:grid-cols-3">
         {data.map((item) => (
-          <div className="flex flex-col items-center justify-center rounded-[10px] bg-white p-[2.5rem]">
-            <span className="flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-mainColor">
-              <Image src={item.icon} width={32} height={32} />
+          <div className="flex flex-col items-center justify-center rounded-lg bg-white p-5">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-mainColor md:h-12 md:w-12">
+              <Image src={item.icon} width={24} height={24} />
             </span>
-            <p className="mt-[2rem] inline text-center text-lgSecondary tracking-wide text-textMain">
+            <p className="mt-8 inline text-center text-sm tracking-wide text-textMain md:mt-5 xl:text-xl">
               {item.title}
             </p>
           </div>
