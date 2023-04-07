@@ -4,38 +4,38 @@ import Container from "./Container";
 
 const AdvertisersHeader = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative md:min-h-screen">
       <Container>
-        <div className="flex gap-[3.75rem] py-[9.375rem]">
-          <div className="w-2/3">
-            <h1 className="tracking-wide text-mainColor text-[3.375rem] leading-[4.125rem]">
-              <span className="inline-block font-bold">Ваша реклама</span> на
-              экранах
-              <span className="inline-block font-bold">смартфонов</span>{" "}
-              клиентов
+        <div className="mt-16 flex flex-col gap-16 md:flex-row">
+          <div className=" relative order-last h-72 md:order-2  md:h-96 md:w-2/5">
+            <Image src="/images/HandPhone.png" fill objectFit="contain" />
+          </div>
+          <div className="md:order-1 md:w-3/5">
+            <h1 className="text-3xl tracking-wide text-mainColor md:text-5xl">
+              <span className="inline-block font-bold"> Ваша реклама</span> на
+              экранах{" "}
+              <span className="inline-block font-bold"> смартфонов</span>{" "}
+              клиентов для бизнеса
             </h1>
-            <p className="mt-[1.375rem] text-lgSecondary tracking-wide text-[#000000]">
+            <p className="mt-3 text-xs tracking-wide text-[#000000] md:text-sm">
               при подключении к WIFI сети заведения
             </p>
-            <button className="shadow-[0_5px_15px_-10px_rgba(116, 104, 255, 0.2)] mt-[4.6rem] inline-block rounded-[5px] bg-mainColor text-center text-white mt-[2.6rem] px-[1.75rem] py-[14px]">
+            <button className="mt-16 inline-block rounded bg-mainColor py-2 px-4 text-center text-xs text-white shadow-md md:py-4 md:px-16 md:text-sm">
               Оставить заявку
             </button>
           </div>
-          <div>
-            <Image width={427} height={698} src="/images/HandPhone.png" />
-          </div>
         </div>
       </Container>
-      <div className="absolute top-[676px] left-[190px]">
+      {/* <div className="absolute top-[676px] left-[190px]">
         <Image src="/icons/magnet.svg" alt="" width={165} height={165} />
       </div>
-      <div className="absolute rotate-[-45deg] top-[620px] left-[350px]">
+      <div className="absolute top-[620px] left-[350px] rotate-[-45deg]">
         <Image src="/icons/electric.svg" alt="" width={60} height={60} />
       </div>
-      <div className="absolute rotate-[0deg] top-[670px] left-[390px]">
+      <div className="absolute top-[670px] left-[390px] rotate-[0deg]">
         <Image src="/icons/electric.svg" alt="" width={60} height={60} />
       </div>
-      <div className="absolute rotate-[15deg] top-[746px] left-[400px]">
+      <div className="absolute top-[746px] left-[400px] rotate-[15deg]">
         <Image src="/icons/electric.svg" alt="" width={60} height={60} />
       </div>
       <div className="absolute top-[556px] left-[514px]">
@@ -64,7 +64,7 @@ const AdvertisersHeader = () => {
           width={72}
           height={72}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

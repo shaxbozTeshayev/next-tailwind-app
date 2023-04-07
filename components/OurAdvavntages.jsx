@@ -24,16 +24,16 @@ const OurAdvavntages = ({ title }) => {
 
   return (
     <Container>
-      <h1 className="text-center font-medium uppercase text-textMain md:text-mdPrimary text-lgPrimary ">
+      <h2 className="text-center text-base font-medium uppercase text-textMain md:text-lg md:font-normal">
         {title}
-      </h1>
-      <div className="mt-[3.75rem] grid grid-cols-4 gap-[1.25rem]">
+      </h2>
+      <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4">
         {data.map((item) => (
-          <div className="flex flex-col items-center justify-center rounded-[8px] bg-white px-[3rem] py-[1rem]">
-            <span className="flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-mainColor">
+          <div className="flex flex-col items-center justify-center rounded-lg bg-white p-8">
+            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
               <Image src={item.icon} width={32} height={32} />
             </span>
-            <p className="mt-[1rem] inline text-center text-lgSecondary text-textMain">
+            <p className="mt-4 inline text-center text-sm text-textMain xl:text-xl">
               {item.title}
             </p>
           </div>

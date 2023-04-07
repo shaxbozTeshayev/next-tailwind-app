@@ -13,7 +13,7 @@ const advertises = () => {
     <Layout>
       <AdvertisersHeader />
       <Statistics />
-      <Screen />
+      {/* <Screen /> */}
       <OurAdvavntages title="Наши преимущество" />
       <WorkStages title="Этапы работы " />
       <ContactsMain />
