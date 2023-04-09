@@ -37,7 +37,7 @@ const ContactsMain = () => {
           />
           <button
             type="button"
-            className="cursor-pointer rounded-md bg-mainColor p-5 text-center text-base text-white shadow-md ring ring-white ring-offset-0 md:italic"
+            className="cursor-pointer rounded-md bg-mainColor p-5 text-center text-base text-white shadow-md ring ring-white ring-offset-0 hover:opacity-80 md:italic"
           >
             Отправка
           </button>

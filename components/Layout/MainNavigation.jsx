@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "../MobileNav";
@@ -12,14 +11,14 @@ const MainNavigation = () => {
   ];
 
   return (
-    <header className="flex h-16 w-full items-center justify-around bg-[#FFFFFF] px-6 md:justify-between md:py-6 md:px-32  xl:h-24  xl:py-[2.5rem] xl:px-44">
+    <header className="flex h-16 w-full items-center justify-around bg-[#FFFFFF] px-6 md:h-20 md:justify-between md:px-20 md:py-6  xl:h-24  xl:py-[2.5rem] xl:px-44">
       <div className="">
         <Link href="/">
           <Image src="/images/UzCloud.png" width={166} height={43} />
         </Link>
       </div>
       <nav>
-        <div className="hidden justify-center md:flex md:items-center md:gap-5 xl:gap-10">
+        <div className="hidden justify-center md:flex md:items-center md:gap-4 xl:gap-10">
           {headerNavLinks.map((item, idx) => (
             <Link
               key={idx}

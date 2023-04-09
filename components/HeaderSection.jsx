@@ -4,8 +4,8 @@ import Image from "next/image";
 const HeaderSection = () => {
   return (
     <section className="relative h-screen">
-      <div className=" mx-auto flex flex-col items-center px-5 md:px-40">
-        <h1 className="z-10 mt-64 text-center text-3xl font-normal tracking-wide text-mainColor lg:mt-16 lg:text-5xl lg:italic xl:mt-24 xl:text-6xl">
+      <div className="mx-auto flex flex-col items-center px-5 md:px-40">
+        <h1 className="mt-64 text-center text-3xl font-normal tracking-wide text-mainColor lg:mt-16 lg:text-5xl lg:italic xl:mt-24 xl:text-6xl">
           Повысьте <span className="font-bold">продуктивность</span> вашей
           компании
         </h1>
@@ -14,12 +14,12 @@ const HeaderSection = () => {
           развития вашего бизнеса, поэтому свяжитесь с нами и получите множество
           наших предложений!!!
         </p>
-        <button className="shadow-[0_5px_15px_-10px_rgba(116, 104, 255, 0.2)] mt-10 inline-block rounded-md bg-mainColor px-6 py-4 text-center text-white md:py-4 md:px-14 lg:mt-10 lg:italic">
+        <button className="mt-10 inline-block rounded-md bg-mainColor px-6 py-4 text-center text-white shadow-md hover:opacity-80 md:py-4 md:px-14 lg:mt-10 lg:italic">
           Оставить заявку
         </button>
       </div>
 
-      <div className="absolute top-[25px] left-[280px] z-0 md:left-[900px] md:top-[100px]">
+      <div className="absolute top-[25px] left-[280px] md:left-[930px] md:top-[150px]">
         <Image
           src="/icons/headerCloud2.svg"
           alt="Cloud"

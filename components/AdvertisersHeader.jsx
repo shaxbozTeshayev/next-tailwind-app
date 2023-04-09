@@ -20,7 +20,7 @@ const AdvertisersHeader = () => {
             <p className="mt-3 text-xs tracking-wide text-[#000000] md:text-sm">
               при подключении к WIFI сети заведения
             </p>
-            <button className="mt-16 inline-block rounded bg-mainColor py-2 px-4 text-center text-xs text-white shadow-md md:py-4 md:px-16 md:text-sm">
+            <button className="mt-16 inline-block rounded bg-mainColor py-2 px-4 text-center text-xs text-white shadow-md hover:opacity-80 md:py-4 md:px-16 md:text-sm">
               Оставить заявку
             </button>
           </div>
