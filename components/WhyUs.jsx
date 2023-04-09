@@ -39,8 +39,8 @@ const WhyUs = ({ title }) => {
         {title}
       </h2>
       <div className="mt-5 flex flex-col justify-between gap-8 md:mt-14 md:flex-row">
-        {data.map((item) => (
-          <div className="flex gap-10 md:flex-col md:items-center">
+        {data.map((item, idx) => (
+          <div key={idx} className="flex gap-10 md:flex-col md:items-center">
             <div className="flex h-20 w-20 items-center justify-center rounded-full bg-mainColor p-4 text-3xl text-white xl:italic">
               {item.num}
             </div>

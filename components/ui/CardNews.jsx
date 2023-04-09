@@ -4,8 +4,8 @@ import Image from "next/image";
 const CardNews = (props) => {
   return (
     <div className="container mt-5 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-      {props.newsCardData.map((data) => (
-        <div className="overflow-hidden">
+      {props.newsCardData.map((data, idx) => (
+        <div key={idx} className="overflow-hidden">
           <div>
             <Image
               src={data.newsImg}

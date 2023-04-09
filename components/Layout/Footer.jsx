@@ -14,7 +14,12 @@ const Footer = () => {
     <footer className="mx-auto flex w-full flex-col justify-center bg-white px-8 md:px-28">
       <div className="mt-8">
         <Link href="/">
-          <Image src="/images/UzCloud.png" width={166} height={43} alt="Cloud" />
+          <Image
+            src="/images/UzCloud.png"
+            width={166}
+            height={43}
+            alt="Cloud"
+          />
         </Link>
       </div>
       <div className="xl:gap-18 flex flex-col xl:flex-row xl:items-center xl:justify-between">
@@ -50,8 +55,7 @@ const Footer = () => {
       </div>
 
       <p className="dark:border-trueGray-700 border-solid-[#F3F7FF] mt-8 border-t  pt-3 text-sm font-medium text-coolGray md:italic">
-        © {new Date().getFullYear()} АК "Узбектелеком". Все услуги
-        лицензированы.
+        {new Date().getFullYear()} АК "Узбектелеком". Все услуги лицензированы.
       </p>
     </footer>
   );

@@ -28,8 +28,11 @@ const OurAdvavntages = ({ title }) => {
         {title}
       </h2>
       <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4">
-        {data.map((item) => (
-          <div className="flex flex-col items-center justify-center rounded-lg bg-white p-8">
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col items-center justify-center rounded-lg bg-white p-8"
+          >
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
               <Image src={item.icon} width={32} height={32} alt="Cloud" />
             </span>
