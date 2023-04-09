@@ -4,8 +4,11 @@ import React from "react";
 const Card = (props) => {
   return (
     <>
-      {props.cardData.map((data) => (
-        <div className="relative flex h-auto flex-col rounded-lg bg-white p-5 md:w-1/3">
+      {props.cardData.map((data, idx) => (
+        <div
+          key={idx}
+          className="relative flex h-auto flex-col rounded-lg bg-white p-5 md:w-1/3"
+        >
           <h5 className="text-sm font-medium  text-mainColor xl:italic">
             {data.title1}
           </h5>

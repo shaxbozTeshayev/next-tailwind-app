@@ -37,7 +37,7 @@ const Footer = () => {
               Наш адрес электронной почты
             </p>
             <p className="mt-1 text-xl font-semibold tracking-wide text-textMain md:italic">
-              uzdc@info.uz
+              uzdcinfo.uz
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
 
       <p className="dark:border-trueGray-700 border-solid-[#F3F7FF] mt-8 border-t  pt-3 text-sm font-medium text-coolGray md:italic">
-        {new Date().getFullYear()} АК "Узбектелеком". Все услуги лицензированы.
+        {new Date().getFullYear()} AK Узбектелеком. Bce услуги лицензированы.
       </p>
     </footer>
   );

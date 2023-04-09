@@ -55,8 +55,11 @@ const Options = ({ title }) => {
               {item.time}
             </h3>
 
-            {cardData2.map((data) => (
-              <div className="mt-7 flex items-center group-hover:stroke-white">
+            {cardData2.map((data, idx) => (
+              <div
+                key={idx}
+                className="mt-7 flex items-center group-hover:stroke-white"
+              >
                 <Image
                   width={32}
                   height={32}
