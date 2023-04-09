@@ -12,7 +12,7 @@ const BusinessHeader = () => {
               src="/images/HandPhone.png"
               fill
               objectFit="contain"
-              alt="handphone"
+              alt="Handphone"
             />
           </div>
           <div className="md:order-2 md:w-3/5">

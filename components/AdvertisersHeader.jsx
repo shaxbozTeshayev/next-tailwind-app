@@ -8,7 +8,12 @@ const AdvertisersHeader = () => {
       <Container>
         <div className="mt-16 flex flex-col gap-16 md:flex-row">
           <div className=" relative order-last h-72 md:order-2  md:h-96 md:w-2/5">
-            <Image src="/images/HandPhone.png" fill objectFit="contain" />
+            <Image
+              src="/images/HandPhone.png"
+              fill
+              objectFit="contain"
+              alt="Cloud"
+            />
           </div>
           <div className="md:order-1 md:w-3/5">
             <h1 className="text-3xl tracking-wide text-mainColor md:text-5xl">
@@ -63,7 +68,12 @@ const AdvertisersHeader = () => {
         />
       </div>
       <div className="absolute top-[404px] left-[750px] hidden lg:block">
-        <Image src="/icons/advertisesSmile.svg" alt="Cloud" width={96} height={96} />
+        <Image
+          src="/icons/advertisesSmile.svg"
+          alt="Cloud"
+          width={96}
+          height={96}
+        />
       </div>
       <div className="absolute top-[572px] left-[929px]">
         <Image
