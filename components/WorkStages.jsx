@@ -30,11 +30,15 @@ const WorkStages = ({ title }) => {
             width={32}
             height={32}
             className="md:h-[48px] md:w-[48px]"
+            alt="Cloud"
           />
         </div>
 
-        {data.map((item) => (
-          <div className="flex flex-col items-center justify-center gap-7">
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col items-center justify-center gap-7"
+          >
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mainColor text-xl text-white md:h-20 md:w-20 lg:text-3xl">
               {item.num}
             </div>
@@ -49,6 +53,7 @@ const WorkStages = ({ title }) => {
             width={32}
             height={32}
             className="md:h-[48px] md:w-[48px]"
+            alt="Cloud"
           />
         </div>
       </div>

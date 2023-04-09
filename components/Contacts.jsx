@@ -34,7 +34,12 @@ const Contacts = ({ title }) => {
           </ul>
         </div>
         <div className="">
-          <Image src="/images/MapContacts.png" width={834} height={622} />
+          <Image
+            src="/images/MapContacts.png"
+            width={834}
+            height={622}
+            alt="Cloud"
+          />
         </div>
       </div>
     </Container>

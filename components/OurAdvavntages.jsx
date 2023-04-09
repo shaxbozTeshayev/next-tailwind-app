@@ -31,7 +31,7 @@ const OurAdvavntages = ({ title }) => {
         {data.map((item) => (
           <div className="flex flex-col items-center justify-center rounded-lg bg-white p-8">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
-              <Image src={item.icon} width={32} height={32} />
+              <Image src={item.icon} width={32} height={32} alt="Cloud" />
             </span>
             <p className="mt-4 inline text-center text-sm text-textMain xl:text-xl">
               {item.title}

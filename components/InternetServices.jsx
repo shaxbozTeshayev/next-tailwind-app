@@ -40,7 +40,7 @@ const InternetServices = ({ title }) => {
           {cardData.map((item) => (
             <div className="group flex flex-col items-center justify-center rounded-lg bg-white px-2 py-7 shadow-lg hover:bg-mainColor ">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
-                <Image src={item.icon} width={32} height={32} />
+                <Image src={item.icon} width={32} height={32} alt="Cloud" />
               </div>
               <p className="mt-4 inline text-center text-sm text-textMain group-hover:text-white xl:text-base">
                 {item.title}
@@ -72,7 +72,7 @@ const InternetServices = ({ title }) => {
           {cardData.map((item) => (
             <div className="group flex flex-col items-center justify-center rounded-lg bg-white px-2 py-7 shadow-lg hover:bg-mainColor ">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
-                <Image src={item.icon} width={32} height={32} />
+                <Image src={item.icon} width={32} height={32} alt="Cloud" />
               </div>
               <p className="mt-4 inline text-center text-sm text-textMain group-hover:text-white xl:text-base">
                 {item.title}

@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="mx-auto flex w-full flex-col justify-center bg-white px-8 md:px-28">
       <div className="mt-8">
         <Link href="/">
-          <Image src="/images/UzCloud.png" width={166} height={43} />
+          <Image src="/images/UzCloud.png" width={166} height={43} alt="Cloud" />
         </Link>
       </div>
       <div className="xl:gap-18 flex flex-col xl:flex-row xl:items-center xl:justify-between">

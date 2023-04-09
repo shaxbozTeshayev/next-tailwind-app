@@ -24,13 +24,14 @@ const WifiAuth = ({ title }) => {
         {title}
       </h2>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 ">
-        {data.map((item) => (
+        {data.map((item, idx) => (
           <div
+            key={idx}
             className="flex flex-col items-center justify-between gap-5
         p-5"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-mainColor md:h-14 md:w-14">
-              <Image src={item.icon} width={24} height={24} />
+              <Image src={item.icon} width={24} height={24} alt="Cloud" />
             </div>
             <p className="inline text-center text-lg font-medium tracking-wide text-textMain  xl:text-xl">
               {item.description}

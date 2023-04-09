@@ -47,14 +47,20 @@ const ComplexSolution = ({ title }) => {
         {title}
       </h2>
       <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
-        {cardData1.map((item) => (
-          <div className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6">
+        {cardData1.map((item, idx) => (
+          <div
+            key={idx}
+            className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6"
+          >
             <h3 className="text-2xl font-bold uppercase text-textSecondary group-hover:text-white">
               {item.time}
             </h3>
 
-            {cardData2.map((data) => (
-              <div className="mt-7 flex items-center group-hover:stroke-white">
+            {cardData2.map((data, idx) => (
+              <div
+                key={idx}
+                className="mt-7 flex items-center group-hover:stroke-white"
+              >
                 <Image
                   width={32}
                   height={32}

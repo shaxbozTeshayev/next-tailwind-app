@@ -29,25 +29,25 @@ const AdvertisersHeader = () => {
       <div className="absolute top-[548px] left-[30px] md:top-[676px] md:left-[190px]">
         <Image
           src="/icons/magnet.svg"
-          alt=""
+          alt="Cloud"
           width={64}
           height={64}
           className="lg:h-[165px] lg:w-[165px]"
         />
       </div>
       <div className="absolute top-[540px] left-[70px] rotate-[-30deg] lg:top-[620px] lg:left-[350px] lg:rotate-[-45deg]">
-        <Image src="/icons/electric.svg" alt="" width={48} height={48} />
+        <Image src="/icons/electric.svg" alt="Cloud" width={48} height={48} />
       </div>
       <div className="absolute top-[670px] left-[390px] hidden rotate-[0deg] lg:block">
-        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
+        <Image src="/icons/electric.svg" alt="Cloud" width={60} height={60} />
       </div>
       <div className="absolute top-[746px] left-[400px] hidden rotate-[15deg] lg:block">
-        <Image src="/icons/electric.svg" alt="" width={60} height={60} />
+        <Image src="/icons/electric.svg" alt="Cloud" width={60} height={60} />
       </div>
       <div className="absolute top-[450px] left-[50px] lg:top-[556px] lg:left-[514px]">
         <Image
           src="/icons/advertisesContacts.svg"
-          alt=""
+          alt="Cloud"
           width={64}
           height={64}
           className="lg:h-[120px] lg:w-[120px]"
@@ -56,19 +56,19 @@ const AdvertisersHeader = () => {
       <div className="absolute top-[350px] left-[80px] lg:top-[691px] lg:left-[778px]">
         <Image
           src="/icons/advertisesContacts.svg"
-          alt=""
+          alt="Cloud"
           width={64}
           height={64}
           className="lg:h-[120px] lg:w-[120px]"
         />
       </div>
       <div className="absolute top-[404px] left-[750px] hidden lg:block">
-        <Image src="/icons/advertisesSmile.svg" alt="" width={96} height={96} />
+        <Image src="/icons/advertisesSmile.svg" alt="Cloud" width={96} height={96} />
       </div>
       <div className="absolute top-[572px] left-[929px]">
         <Image
           src="/icons/advertisesLocation.svg"
-          alt=""
+          alt="Cloud"
           width={72}
           height={72}
         />

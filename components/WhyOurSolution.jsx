@@ -37,10 +37,13 @@ const WhyOurSolution = ({ title }) => {
         {title}
       </h2>
       <div className="mt-5 grid grid-cols-2 gap-5 md:grid-cols-3">
-        {data.map((item) => (
-          <div className="flex flex-col items-center justify-center rounded-lg bg-white p-5">
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col items-center justify-center rounded-lg bg-white p-5"
+          >
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-mainColor md:h-12 md:w-12">
-              <Image src={item.icon} width={24} height={24} />
+              <Image src={item.icon} width={24} height={24} alt="icon" />
             </span>
             <p className="mt-8 inline text-center text-sm tracking-wide text-textMain md:mt-5 xl:text-xl">
               {item.title}

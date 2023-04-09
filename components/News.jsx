@@ -35,10 +35,10 @@ const News = ({ title }) => {
 
       <div className="mt-6 hidden justify-center gap-6  md:flex">
         <button className="cursor-pointer rounded-full bg-white py-7 px-6 hover:opacity-80">
-          <Image src="/icons/btnLeft.svg" width={24} height={16} />
+          <Image src="/icons/btnLeft.svg" width={24} height={16} alt="Cloud" />
         </button>
         <button className="cursor-pointer rounded-full bg-mainColor py-7 px-6 hover:opacity-80">
-          <Image src="/icons/btnRight.svg" width={24} height={16} />
+          <Image src="/icons/btnRight.svg" width={24} height={16} alt="Cloud" />
         </button>
       </div>
     </Container>

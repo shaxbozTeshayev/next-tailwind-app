@@ -10,7 +10,7 @@ const Map = ({ title }) => {
           {title}
         </h2>
         <div className="p-5">
-          <img src="/images/Map.png" className="h-auto w-full" />
+          <img src="/images/Map.png" className="h-auto w-full" alt="Cloud" />
         </div>
       </Container>
     </div>
