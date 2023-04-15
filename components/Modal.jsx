@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import OtpInput from "react-otp-input";
 
 const Modal = ({ visible, onClose }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [otp, setOtp] = useState("");
 
   const handleOnClose = (e) => {
     if (e.target.id === "modal") onClose();
@@ -46,17 +48,31 @@ const Modal = ({ visible, onClose }) => {
           Мы отправили SMS на номер +998 9* *** ** ** Введите 5-значный код
         </p>
 
-        <PhoneInput
-          country={"uz"}
-          value={phoneNumber}
-          onChange={setPhoneNumber}
+        <OtpInput
+          containerStyle="otp-container"
+          inputStyle="otp-input"
+          value={otp}
+          onChange={setOtp}
+          numInputs={5}
+          // disabled={false}
+          shouldAutoFocus
+          renderSeparator={<span>-</span>}
+          renderInput={(props) => <input {...props} />}
         />
+
+        <span className="mt-5">1:59</span>
 
         <button
           type="button"
-          className="mt-16 w-full cursor-pointer rounded-md  bg-mainColor py-4 text-center text-xl text-white shadow-md hover:opacity-80"
+          className="mt-8 w-full cursor-pointer rounded-md  bg-mainColor py-4 text-center text-xl text-white shadow-md hover:opacity-80"
         >
-          Отправка
+          Подтверждение
+        </button>
+        <button
+          type="button"
+          className="mt-8 w-full cursor-pointer rounded-md  border border-indigo-500 bg-white py-4 text-center text-xl text-mainColor shadow-md hover:opacity-80"
+        >
+          Другой номер телефона
         </button>
       </div>
     </div>
