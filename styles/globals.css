@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.react-tel-input .form-control {
+  @apply !w-full py-6 !text-xl font-normal text-textMain;
+}
+
 @layer components {
   .screenActive {
     color: #315796;
