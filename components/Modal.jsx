@@ -14,7 +14,7 @@ const Modal = ({ visible, onClose }) => {
     <div
       id="modal"
       onClick={handleOnClose}
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm"
     >
       {/* <div className="flex flex-col items-center rounded-lg bg-white py-20 px-32">
         <div className="text-2xl font-medium text-textMain">
