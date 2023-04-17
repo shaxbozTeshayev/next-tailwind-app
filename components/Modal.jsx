@@ -27,7 +27,7 @@ const Modal = ({ visible, onClose }) => {
           <div className="text-2xl font-medium text-textMain">
             SMS-подтверждение
           </div>
-          <p className="mt-5 mb-10 text-base font-medium text-coolGray">
+          <p className="mt-5 mb-10 text-center text-base font-medium text-coolGray">
             Мы отправили SMS на номер +998 9* *** ** ** Введите 5-значный код
           </p>
 
@@ -64,7 +64,7 @@ const Modal = ({ visible, onClose }) => {
           <div className="text-2xl font-medium text-textMain">
             Введите свой номер телефона
           </div>
-          <p className="mt-5 mb-10 text-base font-medium text-coolGray">
+          <p className="mt-5 mb-10 text-center text-base font-medium text-coolGray">
             Для входа в личный кабинет введите свой номер телефона
           </p>
 
