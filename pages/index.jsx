@@ -8,8 +8,10 @@ import News from "@/components/News";
 import OurServices from "@/components/OurServices";
 import WhyUs from "@/components/WhyUs";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [session, setSession] = useState(false);
   return (
     <>
       <Head>
@@ -18,16 +20,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <MainNavigation />
-        <HeaderSection />
-        <OurServices title="Наши услуги" />
-        <WhyUs title="Почему мы" />
-        <Map title="Наши филиалы" />
-        <ContactsMain />
-        <News title="Новости" />
-        <Footer />
-      </main>
+
+      {!session && (
+        <main>
+          <MainNavigation />
+          <HeaderSection />
+          <OurServices title="Наши услуги" />
+          <WhyUs title="Почему мы" />
+          <Map title="Наши филиалы" />
+          <ContactsMain />
+          <News title="Новости" />
+          <Footer />
+        </main>
+      )}
     </>
   );
 }
