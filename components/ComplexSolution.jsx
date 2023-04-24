@@ -50,7 +50,7 @@ const ComplexSolution = ({ title }) => {
         {cardData1.map((item, idx) => (
           <div
             key={idx}
-            className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6"
+            className="group rounded-lg bg-white p-7 transition duration-300 ease-in hover:bg-mainColor md:p-6"
           >
             <h3 className="text-2xl font-bold uppercase text-textSecondary group-hover:text-white">
               {item.time}

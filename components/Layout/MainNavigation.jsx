@@ -51,7 +51,7 @@ const MainNavigation = () => {
             <div className="flex items-center justify-center gap-3.5">
               <button
                 onClick={() => setShowModal(true)}
-                className="rounded-md bg-white py-2 px-3 text-sm text-mainColor"
+                className="rounded-md bg-white py-2 px-3 text-sm font-semibold italic text-mainColor ring-2 ring-inset ring-mainColor"
               >
                 Личный кабинет
               </button>

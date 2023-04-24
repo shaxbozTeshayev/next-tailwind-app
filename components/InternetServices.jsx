@@ -36,11 +36,11 @@ const InternetServices = ({ title }) => {
         {title}
       </h2>
       <div className="mt-10 flex flex-col md:flex-row md:gap-20">
-        <div className="order-2 mt-5 grid grid-cols-2 gap-2 rounded-md bg-white p-3 md:order-1   md:w-3/5">
+        <div className="order-2 mt-5 grid grid-cols-2 gap-2 rounded-md bg-white p-3  md:order-1 md:w-3/5">
           {cardData.map((item, idx) => (
             <div
               key={idx}
-              className="group flex flex-col items-center justify-center rounded-lg bg-white px-2 py-7 shadow-lg hover:bg-mainColor "
+              className="group flex flex-col items-center justify-center rounded-lg bg-white px-2 py-7 shadow-lg transition duration-150 ease-in hover:bg-mainColor"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mainColor">
                 <Image src={item.icon} width={32} height={32} alt="Cloud" />

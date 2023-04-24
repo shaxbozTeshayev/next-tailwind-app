@@ -49,7 +49,7 @@ const Options = ({ title }) => {
         {cardData1.map((item, idx) => (
           <div
             key={idx}
-            className="group rounded-lg bg-white p-7 hover:bg-mainColor md:p-6"
+            className="duration-3000 group rounded-lg bg-white p-7 transition ease-in hover:bg-mainColor md:p-6"
           >
             <h3 className="text-2xl font-bold uppercase text-textSecondary group-hover:text-white">
               {item.time}
