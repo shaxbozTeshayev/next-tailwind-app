@@ -3,6 +3,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import OtpInput from "react-otp-input";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Modal = ({ visible, onClose }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -23,7 +24,10 @@ const Modal = ({ visible, onClose }) => {
       className="fixed inset-0 z-50 flex  items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm"
     >
       {showOtp ? (
-        <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white py-20 px-32">
+        <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white py-20 px-28">
+          <button onClick={onClose} className="mb-4 self-end">
+            <Image src="/icons/iconClose.svg" width={21} height={21} />
+          </button>
           <div className="text-2xl font-medium text-textMain">
             SMS-подтверждение
           </div>
@@ -53,6 +57,7 @@ const Modal = ({ visible, onClose }) => {
             Подтверждение
           </button>
           <button
+            onClick={() => setShowOtp(false)}
             type="button"
             className="mt-8 w-full cursor-pointer rounded-md  border border-indigo-500 bg-white py-4 text-center text-xl text-mainColor shadow-md hover:opacity-80"
           >
@@ -60,7 +65,10 @@ const Modal = ({ visible, onClose }) => {
           </button>
         </div>
       ) : (
-        <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white py-20 px-32">
+        <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white px-28 py-20">
+          <button onClick={onClose} className="mb-4 self-end">
+            <Image src="/icons/iconClose.svg" width={21} height={21} />
+          </button>
           <div className="text-2xl font-medium text-textMain">
             Введите свой номер телефона
           </div>
