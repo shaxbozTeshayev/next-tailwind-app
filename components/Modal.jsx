@@ -78,7 +78,7 @@ const Modal = ({ visible, onClose }) => {
           </span>
 
           <button
-            onClick={() => router.push("/business")}
+            onClick={() => router.push("/dashboard")}
             type="button"
             className="mt-8 w-full cursor-pointer rounded-md  bg-mainColor py-4 text-center text-xl text-white shadow-md hover:opacity-80"
           >
