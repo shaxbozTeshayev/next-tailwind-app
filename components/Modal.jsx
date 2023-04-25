@@ -46,7 +46,12 @@ const Modal = ({ visible, onClose }) => {
       {showOtp ? (
         <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white py-20 px-28">
           <button onClick={onClose} className="mb-4 self-end">
-            <Image src="/icons/iconClose.svg" width={21} height={21} />
+            <Image
+              src="/icons/iconClose.svg"
+              width={21}
+              height={21}
+              alt="close"
+            />
           </button>
           <div className="text-2xl font-medium text-textMain">
             SMS-подтверждение
@@ -90,7 +95,12 @@ const Modal = ({ visible, onClose }) => {
       ) : (
         <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white px-28 py-20">
           <button onClick={onClose} className="mb-4 self-end">
-            <Image src="/icons/iconClose.svg" width={21} height={21} />
+            <Image
+              src="/icons/iconClose.svg"
+              width={21}
+              height={21}
+              alt="close"
+            />
           </button>
           <div className="text-2xl font-medium text-textMain">
             Введите свой номер телефона
