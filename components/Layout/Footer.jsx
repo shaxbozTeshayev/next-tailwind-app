@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
 
       <p className="dark:border-trueGray-700 border-solid-[#F3F7FF] mt-8 border-t  pt-3 text-sm font-medium text-coolGray md:italic">
-        {new Date().getFullYear()} AK "Узбектелеком". Bce услуги лицензированы.
+        {new Date().getFullYear()} AK Узбектелеком. Bce услуги лицензированы.
       </p>
     </footer>
   );
