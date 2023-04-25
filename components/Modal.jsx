@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import OtpInput from "react-otp-input";
@@ -9,6 +9,26 @@ const Modal = ({ visible, onClose }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [showOtp, setShowOtp] = useState(false);
+  const [seconds, setSeconds] = useState(0);
+  const [minutes, setMinutes] = useState(2);
+
+  let timer;
+  useEffect(() => {
+    timer = setInterval(() => {
+      setSeconds(seconds - 1);
+      if (seconds === 0) {
+        setMinutes(minutes - 1);
+        setSeconds(59);
+      }
+
+      if (seconds === 0 && minutes === 0) {
+        setMinutes(0);
+        setSeconds(0);
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  });
 
   const router = useRouter();
 
@@ -47,7 +67,10 @@ const Modal = ({ visible, onClose }) => {
             renderInput={(props) => <input {...props} />}
           />
 
-          <span className="mt-5">1:59</span>
+          <span className="mt-5">
+            {minutes < 10 ? "0" + minutes : minutes}:
+            {seconds < 10 ? "0" + seconds : seconds}
+          </span>
 
           <button
             onClick={() => router.push("/business")}
