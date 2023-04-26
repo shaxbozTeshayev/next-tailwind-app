@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "../MobileNav";
-import Modal from "../Modal";
+import Modal from "../ui/modal/Modal";
 import { useRouter } from "next/router";
 import { useState } from "react";
 

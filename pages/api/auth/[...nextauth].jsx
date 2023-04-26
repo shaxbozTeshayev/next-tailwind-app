@@ -26,7 +26,8 @@ export default NextAuth({
             security_code,
           });
           console.log(res.data);
-          if (req.data) return res.data;
+          if (res.data) return res.data;
+          else return null;
         } catch (error) {
           return "Error";
         }
