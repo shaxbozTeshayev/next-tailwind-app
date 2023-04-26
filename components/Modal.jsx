@@ -50,7 +50,7 @@ const Modal = ({ visible, onClose }) => {
         });
         if (res.status === 200) setShowOtp(true);
       } catch (error) {
-        setError({ open: true, data: "Phone number doesn't exist" });
+        setError({ open: true, data: error.response.data?.phone_number });
         setTimeout(() => {
           setError({ open: false, data: "" });
         }, 3000);
@@ -86,7 +86,7 @@ const Modal = ({ visible, onClose }) => {
         //   router.push("/business");
       } catch (error) {
         // console.log(error);
-        setError({ open: true, data: "Incomplete" });
+        setError({ open: true, data: error.response.data?.error_code });
         setTimeout(() => {
           setError({ open: false, data: "" });
         }, 3000);
