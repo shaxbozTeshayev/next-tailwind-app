@@ -74,7 +74,7 @@ const Modal = ({ visible, onClose }) => {
           phone_number: "+" + phoneNumber,
           security_code: otp,
           redirect: true,
-          callbackUrl: "/authUser",
+          callbackUrl: "/",
         });
         console.log(result);
         // const res = await axiosInstance.post("/agent/code_verify/", {
