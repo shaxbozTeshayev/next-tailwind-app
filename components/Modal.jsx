@@ -50,7 +50,7 @@ const Modal = ({ visible, onClose }) => {
         });
         if (res.status === 200) setShowOtp(true);
       } catch (error) {
-        setError({ open: true, data: error.response.data?.phone_number });
+        setError({ open: true, data: error.response?.data?.phone_number });
         setTimeout(() => {
           setError({ open: false, data: "" });
         }, 3000);
@@ -108,6 +108,11 @@ const Modal = ({ visible, onClose }) => {
     >
       {showOtp ? (
         <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white py-20 px-28">
+          {error?.open && (
+            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
+              {error?.data}
+            </div>
+          )}
           <button onClick={onClose} className="mb-4 self-end">
             <Image
               src="/icons/iconClose.svg"
@@ -116,11 +121,6 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
-          {error?.open && (
-            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
-              {error?.data}
-            </div>
-          )}
           <div className="text-2xl font-medium text-textMain">
             SMS-подтверждение
           </div>
@@ -162,6 +162,11 @@ const Modal = ({ visible, onClose }) => {
         </div>
       ) : (
         <div className="flex max-w-2xl flex-col items-center rounded-lg bg-white px-28 py-20">
+          {error?.open && (
+            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
+              {error?.data}
+            </div>
+          )}
           <button onClick={onClose} className="mb-4 self-end">
             <Image
               src="/icons/iconClose.svg"
@@ -170,11 +175,7 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
-          {error?.open && (
-            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
-              {error?.data}
-            </div>
-          )}
+
           <div className="text-2xl font-medium text-textMain">
             Введите свой номер телефона
           </div>
