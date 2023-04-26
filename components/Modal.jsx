@@ -4,13 +4,18 @@ import "react-phone-input-2/lib/style.css";
 import OtpInput from "react-otp-input";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { axiosInstance } from "@/config/config";
 
 const Modal = ({ visible, onClose }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [showOtp, setShowOtp] = useState(false);
+  const [error, setError] = useState({ open: false, data: "" });
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(2);
+
+  // const { data: session } = useSession();
 
   let timer;
   useEffect(() => {
@@ -36,6 +41,64 @@ const Modal = ({ visible, onClose }) => {
     if (e.target.id === "modal") onClose();
   };
 
+  // check phone number
+  const checkPhoneNumberHandler = async () => {
+    if (phoneNumber?.length === 12) {
+      try {
+        const res = await axiosInstance.post("/agent/send_verification_code/", {
+          phone_number: "+" + phoneNumber,
+        });
+        if (res.status === 200) setShowOtp(true);
+      } catch (error) {
+        setError({ open: true, data: error.response.data.phone_number });
+        setTimeout(() => {
+          setError({ open: false, data: "" });
+        }, 3000);
+      }
+    } else {
+      setError({
+        open: true,
+        data: "The phone number was entered incorrectly.",
+      });
+      setTimeout(() => {
+        setError({ open: false, data: "" });
+      }, 3000);
+    }
+  };
+
+  // check code
+  const checkCodeHandler = async () => {
+    if (otp.length === 5) {
+      try {
+        const result = await signIn("credentials", {
+          phone_number: "+" + phoneNumber,
+          security_code: otp,
+          redirect: true,
+          callbackUrl: "/authUser",
+        });
+        console.log(result);
+        // const res = await axiosInstance.post("/agent/code_verify/", {
+        //   phone_number: "+" + phoneNumber,
+        //   security_code: otp
+        // });
+        // console.log(res);
+        // if (res.status === 200)
+        //   router.push("/business");
+      } catch (error) {
+        // console.log(error);
+        setError({ open: true, data: error.response.data.error_code });
+        setTimeout(() => {
+          setError({ open: false, data: "" });
+        }, 3000);
+      }
+    } else {
+      setError({ open: true, data: "The code is incomplete." });
+      setTimeout(() => {
+        setError({ open: false, data: "" });
+      }, 3000);
+    }
+  };
+
   if (!visible) return null;
   return (
     <div
@@ -53,6 +116,11 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
+          {error.open && (
+            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
+              {error.data}
+            </div>
+          )}
           <div className="text-2xl font-medium text-textMain">
             SMS-подтверждение
           </div>
@@ -78,7 +146,7 @@ const Modal = ({ visible, onClose }) => {
           </span>
 
           <button
-            onClick={() => router.push("/dashboard")}
+            onClick={checkCodeHandler}
             type="button"
             className="mt-8 w-full cursor-pointer rounded-md  bg-mainColor py-4 text-center text-xl text-white shadow-md hover:opacity-80"
           >
@@ -102,6 +170,11 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
+          {error.open && (
+            <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
+              {error.data}
+            </div>
+          )}
           <div className="text-2xl font-medium text-textMain">
             Введите свой номер телефона
           </div>
@@ -116,7 +189,7 @@ const Modal = ({ visible, onClose }) => {
           />
 
           <button
-            onClick={() => setShowOtp(true)}
+            onClick={checkPhoneNumberHandler}
             type="button"
             className="mt-16 w-full cursor-pointer rounded-md  bg-mainColor py-4 text-center text-xl text-white shadow-md hover:opacity-80"
           >
