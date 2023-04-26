@@ -1,9 +1,9 @@
 import { useSession } from "next-auth/react";
 import React from "react";
 
-const index = () => {
+const AuthUser = () => {
   const { data: session } = useSession();
-  console.log(session?.user);
+  // console.log(session?.user);
   return (
     <div>
       <h1>Logged In</h1>
@@ -19,4 +19,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default AuthUser;
