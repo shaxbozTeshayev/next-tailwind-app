@@ -116,9 +116,9 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
-          {error.open && (
+          {error?.open && (
             <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
-              {error.data}
+              {error?.data}
             </div>
           )}
           <div className="text-2xl font-medium text-textMain">
@@ -170,9 +170,9 @@ const Modal = ({ visible, onClose }) => {
               alt="close"
             />
           </button>
-          {error.open && (
+          {error?.open && (
             <div className="w-full rounded bg-red-300 p-1 text-center text-xs opacity-90">
-              {error.data}
+              {error?.data}
             </div>
           )}
           <div className="text-2xl font-medium text-textMain">
